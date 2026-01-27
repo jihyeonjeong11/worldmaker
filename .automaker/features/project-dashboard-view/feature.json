@@ -1,0 +1,15 @@
+{
+  "id": "project-dashboard-view",
+  "category": "UI",
+  "title": "Create Project Dashboard and Switcher",
+  "description": "Build a project selection dashboard showing all available projects with metadata (title, last modified, card count). Add quick-access project switcher in the main navigation.",
+  "status": "verified",
+  "priority": 2,
+  "complexity": "moderate",
+  "dependencies": [
+    "multi-project-management"
+  ],
+  "createdAt": "2026-01-24T10:39:09.082Z",
+  "updatedAt": "2026-01-26T16:43:58.458Z",
+  "startedAt": "2026-01-26T16:37:58.825Z"
+}

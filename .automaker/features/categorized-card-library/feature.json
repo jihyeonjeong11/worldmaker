@@ -1,0 +1,16 @@
+{
+  "id": "categorized-card-library",
+  "category": "UI",
+  "title": "Implement Categorized Card Library in Drawer",
+  "description": "Display available story card templates organized by categories within the drawer. Create collapsible category sections with visual grouping and template card previews.",
+  "status": "verified",
+  "priority": 2,
+  "complexity": "moderate",
+  "dependencies": [
+    "drawer-panel-structure",
+    "story-card-data-model"
+  ],
+  "createdAt": "2026-01-24T10:39:09.070Z",
+  "updatedAt": "2026-01-25T04:47:07.343Z",
+  "startedAt": "2026-01-25T04:39:07.168Z"
+}

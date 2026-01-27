@@ -1,0 +1,22 @@
+{
+  "category": "Uncategorized",
+  "description": "Integrate Card Sandbox Feature into Existing Board Tab\n\nAdd a sandbox environment within the board tab that allows users to test, preview, or experiment with cards in isolation before committing changes to the main board.\n\nRequirements:\n- Locate and understand the current board tab implementation and card structure\n- Design sandbox mode UI/UX that clearly distinguishes it from the main board view\n- Implement toggle or entry point to enter/exit sandbox mode from the board tab\n- Create isolated state management for sandbox cards (changes don't affect main board until committed)\n- Add controls to:\n  - Create/edit/delete cards within sandbox\n  - Preview card behavior and interactions\n  - Commit changes to main board\n  - Discard sandbox changes\n- Ensure sandbox cards maintain the same properties and behavior as regular cards\n- Handle edge cases:\n  - What happens if user navigates away while in sandbox mode\n  - How to handle conflicts if main board changes while sandbox is active\n  - Data persistence of unsaved sandbox state\n- Add visual indicators showing when sandbox mode is active\n- Test sandbox functionality with various card types and interactions",
+  "title": "Implement card sandbox in board tab",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": true,
+  "model": "opus",
+  "thinkingLevel": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "skip",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769520648824-ppvxhfotb",
+  "startedAt": "2026-01-27T13:41:59.739Z",
+  "updatedAt": "2026-01-27T13:48:12.583Z",
+  "justFinishedAt": "2026-01-27T13:48:12.583Z"
+}

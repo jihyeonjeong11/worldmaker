@@ -1,0 +1,16 @@
+{
+  "id": "column-crud-operations",
+  "category": "Core",
+  "title": "Implement Kanban Column CRUD Operations",
+  "description": "Add functionality to create, rename, reorder, and delete Kanban board columns. Integrate with Zustand store to persist column state and provide UI controls for column management.",
+  "status": "verified",
+  "priority": 1,
+  "complexity": "moderate",
+  "dependencies": [
+    "basic-kanban-layout",
+    "zustand-store-foundation"
+  ],
+  "createdAt": "2026-01-24T10:39:09.053Z",
+  "updatedAt": "2026-01-24T17:03:20.388Z",
+  "startedAt": "2026-01-24T16:49:39.797Z"
+}

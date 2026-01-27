@@ -1,0 +1,279 @@
+/* TailwindCSS Base Styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * StoryMaker Design System
+ * ========================
+ *
+ * This file contains the base styles and custom utilities for the StoryMaker application.
+ * The design system is built on TailwindCSS with custom tokens defined in tailwind.config.js
+ *
+ * Color Tokens:
+ * - primary-*: Indigo/purple accent colors (primary-500 is the main accent)
+ * - secondary-*: Teal/cyan accent colors
+ * - success-*: Green colors for success states
+ * - warning-*: Amber colors for warning states
+ * - error-*: Red colors for error states
+ * - surface-*: Slate gray surface colors
+ * - background: Dark theme background colors
+ * - text-*: Text color variants
+ * - border-*: Border color variants
+ *
+ * Typography:
+ * - font-sans: System font stack
+ * - font-mono: Monospace font stack
+ *
+ * Spacing, shadows, animations are extended in tailwind.config.js
+ */
+
+/* Custom base layer styles */
+@layer base {
+  /* Improved focus styles for accessibility */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-primary-500;
+  }
+
+  /* Selection styles */
+  ::selection {
+    @apply bg-primary-500 text-white;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Base body styles */
+  body {
+    @apply bg-background text-text-secondary antialiased;
+    font-feature-settings: "liga" 1, "kern" 1;
+  }
+
+  /* Root container */
+  #root {
+    @apply min-h-screen flex flex-col;
+  }
+
+  /* Improved heading rendering */
+  h1, h2, h3, h4, h5, h6 {
+    text-rendering: optimizeLegibility;
+    @apply text-text-primary font-semibold tracking-tight;
+  }
+
+  /* Default link styles */
+  a {
+    @apply text-primary-400 hover:text-primary-300 transition-colors duration-200;
+  }
+
+  /* Code blocks */
+  code, pre {
+    @apply font-mono;
+  }
+
+  /* Scrollbar styling for webkit browsers */
+  ::-webkit-scrollbar {
+    @apply w-2 h-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-surface-600 rounded;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-surface-500;
+  }
+}
+
+/* Custom component classes */
+@layer components {
+  /* Card component */
+  .card {
+    @apply bg-background-card border border-border rounded-card p-4;
+  }
+
+  .card-hover {
+    @apply card transition-all duration-200 hover:bg-background-hover hover:shadow-card-hover;
+  }
+
+  /* Button base styles */
+  .btn {
+    @apply inline-flex items-center justify-center px-4 py-2 rounded-button font-medium
+           transition-all duration-200 focus-visible:outline-none focus-visible:ring-2
+           focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-background
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary-500 text-white hover:bg-primary-600 active:bg-primary-700;
+  }
+
+  .btn-secondary {
+    @apply btn bg-surface-700 text-text-secondary hover:bg-surface-600 active:bg-surface-500;
+  }
+
+  .btn-ghost {
+    @apply btn bg-transparent text-text-secondary hover:bg-background-hover active:bg-background-card;
+  }
+
+  .btn-danger {
+    @apply btn bg-error-500 text-white hover:bg-error-600 active:bg-error-700;
+  }
+
+  /* Input styles */
+  .input {
+    @apply w-full px-3 py-2 bg-surface-800 border border-border rounded-input
+           text-text-secondary placeholder-text-muted
+           focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent
+           transition-all duration-200;
+  }
+
+  /* Badge/Chip styles */
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-chip text-xs font-medium;
+  }
+
+  .badge-primary {
+    @apply badge bg-primary-500/20 text-primary-300;
+  }
+
+  .badge-success {
+    @apply badge bg-success-500/20 text-success-400;
+  }
+
+  .badge-warning {
+    @apply badge bg-warning-500/20 text-warning-400;
+  }
+
+  .badge-error {
+    @apply badge bg-error-500/20 text-error-400;
+  }
+
+  /* Section container */
+  .section {
+    @apply bg-background-card rounded-card p-6 border border-border;
+  }
+
+  /* Visually hidden utility (for accessibility) */
+  .visually-hidden {
+    @apply absolute w-px h-px p-0 -m-px overflow-hidden whitespace-nowrap border-0;
+    clip: rect(0, 0, 0, 0);
+  }
+
+  /* Status indicator dot */
+  .status-dot {
+    @apply w-2 h-2 rounded-full;
+  }
+
+  .status-dot-success {
+    @apply status-dot bg-success-400;
+  }
+
+  .status-dot-warning {
+    @apply status-dot bg-warning-400;
+  }
+
+  .status-dot-error {
+    @apply status-dot bg-error-400;
+  }
+
+  /* Kanban column styles */
+  .kanban-column {
+    @apply flex flex-col bg-surface-800/50 rounded-card p-4 min-w-[280px] max-w-[320px];
+  }
+
+  /* Story card styles */
+  .story-card {
+    @apply card-hover cursor-grab active:cursor-grabbing;
+  }
+}
+
+/* Custom utility classes */
+@layer utilities {
+  /* Text gradient utility */
+  .text-gradient-primary {
+    @apply bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent;
+  }
+
+  /* Background gradient utilities */
+  .bg-gradient-dark {
+    background: linear-gradient(135deg, theme('colors.background.DEFAULT') 0%, theme('colors.background.dark') 100%);
+  }
+
+  /* Subtle glow effects */
+  .glow-primary {
+    box-shadow: 0 0 20px theme('colors.primary.500 / 30%');
+  }
+
+  .glow-success {
+    box-shadow: 0 0 20px theme('colors.success.500 / 30%');
+  }
+
+  /* Drag and drop utilities */
+  .dragging {
+    @apply opacity-50 scale-105 shadow-card-hover;
+  }
+
+  .drop-target {
+    @apply ring-2 ring-primary-500 ring-offset-2 ring-offset-background;
+  }
+
+  /* dnd-kit drag animations */
+  .dnd-drag-overlay {
+    @apply shadow-lg ring-2 ring-primary-500 rounded-card opacity-95;
+    transform: rotate(3deg);
+    cursor: grabbing !important;
+  }
+
+  .dnd-dragging-source {
+    @apply opacity-50;
+  }
+
+  .dnd-drop-indicator {
+    @apply bg-primary-500/10 border-2 border-dashed border-primary-500 rounded-card;
+  }
+
+  /* Selected state utility */
+  .selected {
+    @apply ring-2 ring-primary-500 ring-offset-2 ring-offset-background;
+  }
+
+  /* Story card selected state */
+  .story-card-selected {
+    @apply ring-2 ring-primary-500 ring-offset-2 ring-offset-background bg-primary-500/10;
+  }
+
+  /* Animation utilities */
+  .animate-in {
+    @apply animate-fade-in;
+  }
+
+  /* Truncate multi-line text */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Safe area insets for Electron */
+  .safe-top {
+    padding-top: env(safe-area-inset-top, 0);
+  }
+
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 0);
+  }
+}

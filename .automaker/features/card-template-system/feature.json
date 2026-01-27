@@ -1,0 +1,16 @@
+{
+  "id": "card-template-system",
+  "category": "Core",
+  "title": "Implement Card Template and Duplication",
+  "description": "Create a template system allowing users to save cards as reusable templates. Add duplication functionality to quickly create new cards from existing templates or placeholders.",
+  "status": "verified",
+  "priority": 2,
+  "complexity": "moderate",
+  "dependencies": [
+    "card-crud-operations",
+    "categorized-card-library"
+  ],
+  "createdAt": "2026-01-24T10:39:09.075Z",
+  "updatedAt": "2026-01-25T09:35:23.204Z",
+  "startedAt": "2026-01-25T09:21:23.730Z"
+}

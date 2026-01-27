@@ -1,0 +1,16 @@
+{
+  "id": "basic-kanban-layout",
+  "category": "UI",
+  "title": "Build Empty Kanban Board Layout",
+  "description": "Create the main Kanban board component with empty columns layout. Implement responsive grid/flexbox structure that can accommodate multiple columns and prepare the canvas for drag-and-drop functionality.",
+  "status": "verified",
+  "priority": 1,
+  "complexity": "moderate",
+  "dependencies": [
+    "tailwind-setup",
+    "story-card-data-model"
+  ],
+  "createdAt": "2026-01-24T10:39:09.052Z",
+  "updatedAt": "2026-01-24T16:49:35.146Z",
+  "startedAt": "2026-01-24T16:49:02.732Z"
+}

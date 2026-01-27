@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project_specification>
+  <project_name>StoryMaker</project_name>
+
+  <overview>
+    StoryMaker is a real-time story creation application built with React and Electron, featuring a Kanban board dashboard for organizing narrative elements through customizable &apos;story cards&apos;. The application enables writers and storytellers to visually structure their stories using drag-and-drop functionality. Users start with an empty Kanban board and access a drawer containing categorized story cards that can be searched, filtered, and organized. The system supports full CRUD operations for story cards (creating from scratch or duplicating from templates), Kanban board categories, and multi-project management. A key feature is the ability to create genre-specific templates for Kanban categories, allowing users to quickly set up story structures tailored to different narrative styles. The drawer includes a keyword-based search with bubble button UI for frequently used keywords. Future plans include monorepo architecture for backend services and MediaPipe integration for text extraction from images.
+  </overview>
+
+  <technology_stack>
+    <technology>React</technology>
+    <technology>Electron</technology>
+    <technology>TypeScript</technology>
+    <technology>dnd-kit (drag-and-drop)</technology>
+    <technology>react-window (virtualization)</technology>
+    <technology>Zustand (state management)</technology>
+    <technology>Immer (immutable state updates)</technology>
+    <technology>Vite (build tool)</technology>
+    <technology>TailwindCSS (styling)</technology>
+    <technology>ESLint (linting)</technology>
+    <technology>Prettier (code formatting)</technology>
+  </technology_stack>
+
+  <core_capabilities>
+    <capability>Real-time Kanban board for story structure visualization</capability>
+    <capability>Customizable story cards with full CRUD operations</capability>
+    <capability>Drawer panel with categorized story card library</capability>
+    <capability>Keyword-based search with bubble button interface for tags</capability>
+    <capability>Drag-and-drop card placement between Kanban columns</capability>
+    <capability>Story card templates and placeholders for quick duplication</capability>
+    <capability>Genre-specific Kanban category templates</capability>
+    <capability>Multi-project management for handling multiple stories</capability>
+    <capability>Virtualized rendering for performance with large card collections</capability>
+    <capability>Persistent local storage for projects and cards</capability>
+  </core_capabilities>
+
+  <implemented_features>
+    <feature>
+      <name>Project Initialization</name>
+      <description>Git repository initialized with automaker configuration structure for project specification management</description>
+      <file_locations>
+        <location>.automaker/app_spec.txt</location>
+        <location>.automaker/categories.json</location>
+      </file_locations>
+    </feature>
+  </implemented_features>
+
+  <additional_requirements>
+    <requirement>Node.js 18+ runtime environment</requirement>
+    <requirement>Electron for desktop application packaging</requirement>
+    <requirement>Local file system access for project persistence</requirement>
+    <requirement>Cross-platform support (Windows, macOS, Linux)</requirement>
+  </additional_requirements>
+
+  <development_guidelines>
+    <guideline>Use Zustand with Immer middleware for immutable state management</guideline>
+    <guideline>Implement component virtualization with react-window for large lists</guideline>
+    <guideline>Follow atomic design principles for UI components</guideline>
+    <guideline>Use TypeScript strict mode for type safety</guideline>
+    <guideline>Implement custom hooks for drag-and-drop logic using dnd-kit</guideline>
+    <guideline>Separate Electron main and renderer process concerns</guideline>
+    <guideline>Use context isolation for Electron security best practices</guideline>
+    <guideline>Implement optimistic UI updates for responsive user experience</guideline>
+  </development_guidelines>
+
+  <implementation_roadmap>
+    <phase>
+      <name>Project Setup &amp; Foundation</name>
+      <status>pending</status>
+      <description>Initialize React + Electron + Vite project structure, configure TypeScript, set up Zustand store with Immer, establish component architecture</description>
+    </phase>
+    <phase>
+      <name>Kanban Board Core</name>
+      <status>pending</status>
+      <description>Implement empty Kanban board with column CRUD, integrate dnd-kit for drag-and-drop between columns, add column management UI</description>
+    </phase>
+    <phase>
+      <name>Story Card System</name>
+      <status>pending</status>
+      <description>Create story card component with customizable fields, implement card CRUD operations, add card templates/placeholders for duplication</description>
+    </phase>
+    <phase>
+      <name>Drawer Feature</name>
+      <status>pending</status>
+      <description>Build drawer panel with categorized card library, implement keyword search functionality, create bubble button UI for keyword tags, add virtualization with react-window</description>
+    </phase>
+    <phase>
+      <name>Multi-Project Management</name>
+      <status>pending</status>
+      <description>Implement project creation/switching, add project persistence to local storage, create project dashboard view</description>
+    </phase>
+    <phase>
+      <name>Genre Templates</name>
+      <status>pending</status>
+      <description>Build template system for Kanban category configurations, create preset templates for common story genres (thriller, romance, fantasy, etc.), enable template customization and saving</description>
+    </phase>
+    <phase>
+      <name>Polish &amp; Optimization</name>
+      <status>pending</status>
+      <description>Optimize rendering performance, add keyboard shortcuts, implement undo/redo functionality, refine UI/UX based on usage patterns</description>
+    </phase>
+  </implementation_roadmap>
+</project_specification>

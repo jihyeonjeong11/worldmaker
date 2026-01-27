@@ -1,0 +1,15 @@
+{
+  "id": "zustand-store-foundation",
+  "category": "Core",
+  "title": "Set Up Zustand Store with Immer Middleware",
+  "description": "Initialize Zustand state management with Immer middleware for immutable state updates. Create the base store structure with slices for projects, cards, and board columns.",
+  "status": "verified",
+  "priority": 1,
+  "complexity": "moderate",
+  "dependencies": [
+    "project-scaffolding"
+  ],
+  "createdAt": "2026-01-24T10:39:09.046Z",
+  "updatedAt": "2026-01-24T11:10:12.263Z",
+  "startedAt": "2026-01-24T11:01:02.482Z"
+}

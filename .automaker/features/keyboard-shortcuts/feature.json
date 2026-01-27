@@ -1,0 +1,17 @@
+{
+  "id": "keyboard-shortcuts",
+  "category": "UI",
+  "title": "Add Keyboard Shortcuts and Accessibility",
+  "description": "Implement keyboard shortcuts for common actions (create card, search, navigate columns, save). Add ARIA labels and keyboard navigation support for accessibility compliance.",
+  "status": "backlog",
+  "priority": 3,
+  "complexity": "moderate",
+  "dependencies": [
+    "card-crud-operations",
+    "drawer-panel-structure"
+  ],
+  "createdAt": "2026-01-24T10:39:09.084Z",
+  "updatedAt": "2026-01-27T05:16:41.006Z",
+  "branchName": "master",
+  "startedAt": "2026-01-27T05:16:36.542Z"
+}

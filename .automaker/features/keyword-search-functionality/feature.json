@@ -1,0 +1,15 @@
+{
+  "id": "keyword-search-functionality",
+  "category": "Core",
+  "title": "Add Keyword-Based Search for Cards",
+  "description": "Implement search functionality in the drawer that filters cards by keywords, titles, and tags. Add real-time search with debouncing for performance and highlight matching results.",
+  "status": "verified",
+  "priority": 2,
+  "complexity": "moderate",
+  "dependencies": [
+    "categorized-card-library"
+  ],
+  "createdAt": "2026-01-24T10:39:09.071Z",
+  "updatedAt": "2026-01-25T09:51:05.207Z",
+  "startedAt": "2026-01-25T09:49:59.970Z"
+}

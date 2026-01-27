@@ -1,0 +1,13 @@
+{
+  "id": "project-scaffolding",
+  "category": "Core",
+  "title": "Initialize React + Electron + Vite Project",
+  "description": "Set up the foundational project structure with React, Electron, and Vite build tool. Configure TypeScript with strict mode and establish the basic Electron main/renderer process architecture with context isolation for security.",
+  "status": "verified",
+  "priority": 1,
+  "complexity": "moderate",
+  "dependencies": [],
+  "createdAt": "2026-01-24T10:39:09.042Z",
+  "updatedAt": "2026-01-24T10:50:41.120Z",
+  "startedAt": "2026-01-24T10:39:43.364Z"
+}

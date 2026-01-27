@@ -1,0 +1,16 @@
+{
+  "id": "card-crud-operations",
+  "category": "Core",
+  "title": "Implement Story Card CRUD Operations",
+  "description": "Add full create, read, update, and delete functionality for story cards. Connect card operations to Zustand store and provide UI modals/forms for card editing with validation.",
+  "status": "verified",
+  "priority": 1,
+  "complexity": "moderate",
+  "dependencies": [
+    "story-card-component",
+    "zustand-store-foundation"
+  ],
+  "createdAt": "2026-01-24T10:39:09.066Z",
+  "updatedAt": "2026-01-25T03:33:19.965Z",
+  "startedAt": "2026-01-25T03:27:58.601Z"
+}

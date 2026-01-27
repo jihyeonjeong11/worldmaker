@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "**Task:** Refactor existing 'card' into  an interactive \"Worldbuilding Sandbox\" based on the _Deck of Worlds_ mechanics. The system should allow users to create \"Microsettings\" by physically stacking (tucking) cards to form a narrative flow.\n\n### **1. Core Component: The Card Object**\n\nEvery card is a reusable atomic unit.\n\n- **Properties:** `id`, `category` (Region, Landmark, Namesake, Origin, Attribute, Advent), `title` (the main name), `cue` (the descriptive sentence at the bottom), and `colorTheme`.\n    \n- **Storage:** When a user types a new cue, it should be saved as a permanent card in the \"Card Library\" for future reuse across different settings.\n    \n\n### **2. The \"Tucking\" & Stacking Engine**\n\nImplement the visual logic shown in the guidebook (p.3, p.6):\n\n- **Primary Stack (Vertical):** > - Start with a **Region** card.\n    \n    - **Tuck** other cards (Namesake, Origin, Attribute, Advent) underneath.\n        \n    - **Visual Rule:** Only the bottom \"Cue\" strip of the tucked card should remain visible. Each added card increases the total height of the stack, creating a \"read-down\" narrative.\n        \n- **Side Tucking (Horizontal):** > - **Landmark** cards can be tucked behind the **left or right edges** of the Region card to indicate specific sites within that environment.\n    \n\n### **3. UI / Interaction Design**\n\n- **Slot-based Workspace:** Instead of a linear form, provide a canvas with \"Tuck Zones\" (Top, Bottom, Left, Right) around the central Region card.\n    \n- **Narrative Synthesis:** Dynamically generate a \"Setting Summary\" text by concatenating the visible Cues from the current stack (e.g., \"[Region] + [Landmark] + [Namesake Cue]...\").\n    \n- **Card Pool Sidebar:** A searchable library of all previously created cards, categorized by type. Users can drag a \"Landmark\" card from the pool and drop it onto the Region's side-slot.\n    \n\n### **4. Technical Specifications**\n\n- **Framework:** React with Tailwind CSS.\n    \n- **State Management:** Use a centralized store (like Zustand or Context) to manage the `currentSetting` (array of tucked card IDs and their positions).\n    \n- **Layout:** Use `flex-col-reverse` or absolute positioning with calculated offsets to handle the \"Tucked\" appearance without breaking the DOM flow.\n\nI attach an image that card stacking ui",
+  "title": "Create interactive Worldbuilding Sandbox with card tucking mechanics",
+  "images": [],
+  "imagePaths": [
+    {
+      "id": "img-1769519747641-qnw4z3lh5",
+      "path": "C:\\automaker\\storymaker\\.automaker\\features\\feature-1769519772464-c18vgosou\\images\\pasted-image-2026-01-27T13-15-47-618Z-1769519747638.png",
+      "filename": "pasted-image-2026-01-27T13-15-47-618Z.png",
+      "mimeType": "image/png"
+    }
+  ],
+  "textFilePaths": [],
+  "skipTests": true,
+  "model": "opus",
+  "thinkingLevel": "ultrathink",
+  "branchName": "master",
+  "priority": 1,
+  "planningMode": "skip",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769519772464-c18vgosou",
+  "startedAt": "2026-01-27T13:16:22.889Z",
+  "updatedAt": "2026-01-27T13:25:15.687Z",
+  "justFinishedAt": "2026-01-27T13:25:15.687Z"
+}

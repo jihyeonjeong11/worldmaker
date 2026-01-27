@@ -1,0 +1,16 @@
+{
+  "id": "dnd-kit-integration",
+  "category": "Core",
+  "title": "Integrate dnd-kit for Drag-and-Drop",
+  "description": "Set up dnd-kit library for drag-and-drop functionality between Kanban columns. Implement custom hooks and context providers for draggable cards and droppable columns with smooth animations.",
+  "status": "verified",
+  "priority": 1,
+  "complexity": "complex",
+  "dependencies": [
+    "story-card-component",
+    "column-crud-operations"
+  ],
+  "createdAt": "2026-01-24T10:39:09.064Z",
+  "updatedAt": "2026-01-25T03:45:56.045Z",
+  "startedAt": "2026-01-25T03:33:27.593Z"
+}

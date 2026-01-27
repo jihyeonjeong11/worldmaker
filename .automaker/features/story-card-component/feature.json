@@ -1,0 +1,16 @@
+{
+  "id": "story-card-component",
+  "category": "UI",
+  "title": "Create Story Card UI Component",
+  "description": "Build the reusable story card component with customizable fields (title, description, category, tags). Design the card layout with proper visual hierarchy and interactive states (hover, selected, dragging).",
+  "status": "verified",
+  "priority": 1,
+  "complexity": "moderate",
+  "dependencies": [
+    "tailwind-setup",
+    "story-card-data-model"
+  ],
+  "createdAt": "2026-01-24T10:39:09.054Z",
+  "updatedAt": "2026-01-24T17:10:25.781Z",
+  "startedAt": "2026-01-24T17:03:23.834Z"
+}

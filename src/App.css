@@ -1,0 +1,149 @@
+/* App Container */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #e8e8e8;
+}
+
+/* Header */
+.app-header {
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+}
+
+.app-subtitle {
+  margin: 0.5rem 0 0;
+  font-size: 1.1rem;
+  color: #a0a0a0;
+}
+
+/* Main Content */
+.app-main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Welcome Section */
+.welcome-section {
+  margin-bottom: 2rem;
+}
+
+.welcome-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.welcome-section > p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #c0c0c0;
+  margin-bottom: 1.5rem;
+}
+
+/* Status Info */
+.status-info {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.status-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.status-item:last-child {
+  border-bottom: none;
+}
+
+.status-label {
+  font-weight: 500;
+  color: #888;
+}
+
+.status-value {
+  color: #4ade80;
+  font-family: 'Monaco', 'Consolas', monospace;
+}
+
+/* Features Section */
+.features-section {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.features-section h3 {
+  margin: 0 0 1rem;
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features-list li {
+  padding: 0.75rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #b0b0b0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.features-list li:last-child {
+  border-bottom: none;
+}
+
+.features-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #6366f1;
+}
+
+/* Footer */
+.app-footer {
+  padding: 1.5rem;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .app-header h1 {
+    font-size: 2rem;
+  }
+
+  .app-main {
+    padding: 1rem;
+  }
+
+  .status-item {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}

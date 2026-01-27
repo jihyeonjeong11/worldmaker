@@ -1,0 +1,22 @@
+{
+  "category": "Uncategorized",
+  "description": "Make card worldbuilding featre as a default. you can remove priority and status for now",
+  "title": "Add card worldbuilding as default feature",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": true,
+  "model": "opus",
+  "thinkingLevel": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "skip",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "titleGenerating": false,
+  "status": "verified",
+  "id": "feature-1769511420066-dycu9qlmy",
+  "startedAt": "2026-01-27T10:57:08.211Z",
+  "updatedAt": "2026-01-27T11:03:15.715Z",
+  "justFinishedAt": "2026-01-27T11:03:15.715Z"
+}

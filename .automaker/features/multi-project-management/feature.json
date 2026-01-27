@@ -1,0 +1,15 @@
+{
+  "id": "multi-project-management",
+  "category": "Core",
+  "title": "Implement Multi-Project Management System",
+  "description": "Add functionality to create, switch between, and manage multiple story projects. Each project maintains its own board state, cards, and columns with independent persistence.",
+  "status": "verified",
+  "priority": 2,
+  "complexity": "complex",
+  "dependencies": [
+    "local-storage-persistence"
+  ],
+  "createdAt": "2026-01-24T10:39:09.081Z",
+  "updatedAt": "2026-01-26T16:37:55.364Z",
+  "startedAt": "2026-01-26T16:25:12.880Z"
+}

@@ -1,0 +1,22 @@
+{
+  "category": "Uncategorized",
+  "description": "Data not wiring.\n\nBorad tab should have 'card library' that created from sandbox tab.",
+  "title": "Fix board tab card library wiring",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": true,
+  "model": "opus",
+  "thinkingLevel": "none",
+  "branchName": "master",
+  "priority": 2,
+  "planningMode": "skip",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "titleGenerating": false,
+  "status": "waiting_approval",
+  "id": "feature-1769521965639-6jdkq2i6d",
+  "startedAt": "2026-01-27T14:04:20.475Z",
+  "updatedAt": "2026-01-27T14:08:31.857Z",
+  "justFinishedAt": "2026-01-27T14:08:31.857Z"
+}

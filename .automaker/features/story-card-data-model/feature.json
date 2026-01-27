@@ -1,0 +1,15 @@
+{
+  "id": "story-card-data-model",
+  "category": "Core",
+  "title": "Define Story Card and Board Data Models",
+  "description": "Create TypeScript interfaces and types for story cards, Kanban columns, projects, and templates. Establish the data schema that will be used across the application for type safety.",
+  "status": "verified",
+  "priority": 1,
+  "complexity": "simple",
+  "dependencies": [
+    "zustand-store-foundation"
+  ],
+  "createdAt": "2026-01-24T10:39:09.051Z",
+  "updatedAt": "2026-01-24T12:37:56.097Z",
+  "startedAt": "2026-01-24T12:34:06.751Z"
+}
