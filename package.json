@@ -11,8 +11,7 @@
     "node": ">=22.0.0 <23.0.0"
   },
   "scripts": {
-    "test:real": "vitest run",
-    "test": "echo 'yet'",
+    "test": "vitest run",
     "prepare": "husky"
   },
   "keywords": [

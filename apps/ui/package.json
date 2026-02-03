@@ -2,7 +2,44 @@
   "name": "@worldmaker/ui",
   "version": "0.0.1",
   "private": true,
+  "main": "dist/main/main.js",
+  "engines": {
+    "node": ">=22.0.0 <23.0.0"
+  },
   "scripts": {
-    "dev": "vite"
+    "dev": "vite",
+    "dev:vite": "vite --config vite.config.ts",
+    "dev:electron": "wait-on http://localhost:5173 && npm run build:main && npm run build:preload && cross-env NODE_ENV=development electron .",
+    "build": "npm run build:main && npm run build:preload && npm run build:renderer",
+    "build:main": "npx tsc -p tsconfig.main.json",
+    "build:preload": "npx tsc -p tsconfig.preload.json",
+    "build:renderer": "npx vite build --config vite.config.ts",
+    "start": "electron .",
+    "pack": "npm run build && electron-builder --dir",
+    "dist": "npm run build && electron-builder"
+  },
+  "keywords": [
+    "electron",
+    "react",
+    "worldbuilding",
+    "fantasy"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.0",
+    "@types/react": "^19.2.10",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.2.1",
+    "electron": "^33.3.1",
+    "electron-builder": "^26.7.0",
+    "typescript": "^5.9.3",
+    "vite": "^5.4.19",
+    "wait-on": "^9.0.3"
   }
 }
