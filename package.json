@@ -1,0 +1,25 @@
+{
+  "name": "worldmaker",
+  "version": "0.0.1",
+  "description": "Fantash worldbuilding app",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "kanban"
+  ],
+    "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,css,md,html,yml,yaml}": [
+      "prettier --write"
+    ]
+  },
+  "author": "JIHYEON JEONG",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.8.1",
+    "vitest": "^4.0.18"
+  }
+}
