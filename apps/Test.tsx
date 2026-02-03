@@ -1,3 +1,3 @@
-const Test =(() => {
-    return <div>Test Component</div>;
-})
+const Test = () => {
+  return <div>Test Component</div>;
+};

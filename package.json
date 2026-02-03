@@ -9,7 +9,7 @@
   "keywords": [
     "kanban"
   ],
-    "lint-staged": {
+  "lint-staged": {
     "*.{js,jsx,ts,tsx,json,css,md,html,yml,yaml}": [
       "prettier --write"
     ]
