@@ -4,7 +4,9 @@
   "description": "Fantash worldbuilding app",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:real": "vitest run",
+    "test": "echo 'yet'",
+    "prepare": "husky"
   },
   "keywords": [
     "kanban"
