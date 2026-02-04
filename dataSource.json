@@ -1,0 +1,2999 @@
+{
+  "regions": [
+    {
+      "id": "region-001",
+      "name": "Wood(s)",
+      "name_ko": "숲",
+      "type": "Region",
+      "description": "A forested area or woodland."
+    },
+    {
+      "id": "region-002",
+      "name": "Desert",
+      "name_ko": "사막",
+      "type": "Region",
+      "description": "A barren, sandy, or rocky arid biome."
+    },
+    {
+      "id": "region-003",
+      "name": "Delta",
+      "name_ko": "삼각주",
+      "type": "Region",
+      "description": "A landform created by deposition of sediment at the mouth of a river."
+    },
+    {
+      "id": "region-004",
+      "name": "Mountain(s)",
+      "name_ko": "산",
+      "type": "Region",
+      "description": "Large natural elevations of the earth's surface rising abruptly from the surrounding level."
+    },
+    {
+      "id": "region-005",
+      "name": "Hill(s)",
+      "name_ko": "언덕",
+      "type": "Region",
+      "description": "Naturally raised areas of land, not as high or craggy as a mountain."
+    },
+    {
+      "id": "region-006",
+      "name": "Canyon(s)",
+      "name_ko": "협곡",
+      "type": "Region",
+      "description": "Deep clefts between cliffs or escarpments, often carved by a river."
+    },
+    {
+      "id": "region-007",
+      "name": "Basin",
+      "name_ko": "분지",
+      "type": "Region",
+      "description": "A depression, or dip, in the Earth’s surface, often containing water or salt deposits."
+    },
+    {
+      "id": "region-008",
+      "name": "Glacier",
+      "name_ko": "빙하",
+      "type": "Region",
+      "description": "A slowly moving mass or river of ice formed by the accumulation and compaction of snow."
+    },
+    {
+      "id": "region-009",
+      "name": "Rainforest",
+      "name_ko": "열대우림",
+      "type": "Region",
+      "description": "A luxuriant, dense forest rich in biodiversity, found in typically tropical areas with heavy rainfall."
+    },
+    {
+      "id": "region-010",
+      "name": "Fields",
+      "name_ko": "들판",
+      "type": "Region",
+      "description": "Expansive areas of open land, often used for cultivation or pasture."
+    },
+    {
+      "id": "region-011",
+      "name": "Valley",
+      "name_ko": "계곡",
+      "type": "Region",
+      "description": "A low area of land between hills or mountains, typically with a river or stream flowing through it."
+    },
+    {
+      "id": "region-012",
+      "name": "Port",
+      "name_ko": "항구",
+      "type": "Region",
+      "description": "A maritime facility where ships may dock to load and unload passengers and cargo."
+    },
+    {
+      "id": "region-013",
+      "name": "Plain",
+      "name_ko": "평원",
+      "type": "Region",
+      "description": "A broad area of relatively flat land."
+    },
+    {
+      "id": "region-014",
+      "name": "Barren",
+      "name_ko": "황무지",
+      "type": "Region",
+      "description": "Land that is too poor to produce much or any vegetation."
+    },
+    {
+      "id": "region-015",
+      "name": "City",
+      "name_ko": "도시",
+      "type": "Region",
+      "description": "A large human settlement, often center of commerce and culture."
+    },
+    {
+      "id": "region-016",
+      "name": "Lake",
+      "name_ko": "호수",
+      "type": "Region",
+      "description": "A large body of water surrounded by land."
+    },
+    {
+      "id": "region-017",
+      "name": "Cliff(s)",
+      "name_ko": "절벽",
+      "type": "Region",
+      "description": "A steep rock face, especially at the edge of the sea."
+    },
+    {
+      "id": "region-018",
+      "name": "Island(s)",
+      "name_ko": "섬",
+      "type": "Region",
+      "description": "A piece of land surrounded by water."
+    },
+    {
+      "id": "region-019",
+      "name": "Forest",
+      "name_ko": "숲/산림",
+      "type": "Region",
+      "description": "A large area covered chiefly with trees and undergrowth."
+    },
+    {
+      "id": "region-020",
+      "name": "Jungle",
+      "name_ko": "정글",
+      "type": "Region",
+      "description": "An area of land overgrown with dense forest and tangled vegetation, typically in the tropics."
+    },
+    {
+      "id": "region-021",
+      "name": "River",
+      "name_ko": "강",
+      "type": "Region",
+      "description": "A large natural stream of water flowing in a channel to the sea, a lake, or another such stream."
+    },
+    {
+      "id": "region-022",
+      "name": "Marsh",
+      "name_ko": "습지",
+      "type": "Region",
+      "description": "An area of low-lying land that is flooded in wet seasons or at high tide, and typically remains waterlogged at all times."
+    },
+    {
+      "id": "region-023",
+      "name": "Road",
+      "name_ko": "길/도로",
+      "type": "Region",
+      "description": "A wide way leading from one place to another, especially one with a specially prepared surface."
+    },
+    {
+      "id": "region-024",
+      "name": "Bayou",
+      "name_ko": "바유/느린 하천",
+      "type": "Region",
+      "description": "A marshy outlet of a lake or river, typically found in flat, low-lying areas."
+    },
+    {
+      "id": "region-025",
+      "name": "Wasteland",
+      "name_ko": "황무지/폐허",
+      "type": "Region",
+      "description": "An unused area of land that has become barren or desolated."
+    },
+    {
+      "id": "region-026",
+      "name": "Moraine",
+      "name_ko": "퇴석/빙퇴석",
+      "type": "Region",
+      "description": "A mass of rocks and sediment carried down and deposited by a glacier."
+    },
+    {
+      "id": "region-027",
+      "name": "Swamp",
+      "name_ko": "늪/습지",
+      "type": "Region",
+      "description": "An area of low-lying, uncultivated ground where water collects; a bog or marsh."
+    },
+    {
+      "id": "region-028",
+      "name": "Grassland",
+      "name_ko": "초원",
+      "type": "Region",
+      "description": "A large open area of country covered with grass, especially one used for grazing."
+    },
+    {
+      "id": "region-029",
+      "name": "Scree",
+      "name_ko": "너설/돌너덜",
+      "type": "Region",
+      "description": "A mass of small loose stones that form or cover a slope on a mountain."
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "landmark-001",
+      "name": "Workshop",
+      "name_ko": "작업장",
+      "type": "Landmark",
+      "description": "A place where things are crafted or repaired."
+    },
+    {
+      "id": "landmark-002",
+      "name": "Waterfall",
+      "name_ko": "폭포",
+      "type": "Landmark",
+      "description": "A cascade of water falling from a height."
+    },
+    {
+      "id": "landmark-003",
+      "name": "Wall",
+      "name_ko": "성벽/벽",
+      "type": "Landmark",
+      "description": "A continuous vertical brick or stone structure that encloses or divides an area."
+    },
+    {
+      "id": "landmark-004",
+      "name": "Rock",
+      "name_ko": "바위",
+      "type": "Landmark",
+      "description": "A large natural formed mass of stone."
+    },
+    {
+      "id": "landmark-005",
+      "name": "Stream",
+      "name_ko": "개울",
+      "type": "Landmark",
+      "description": "A small, narrow river."
+    },
+    {
+      "id": "landmark-006",
+      "name": "Vineyard",
+      "name_ko": "포도밭",
+      "type": "Landmark",
+      "description": "A plantation of grapevines, typically for winemaking."
+    },
+    {
+      "id": "landmark-007",
+      "name": "Caldera",
+      "name_ko": "칼데라/화구",
+      "type": "Landmark",
+      "description": "A large volcanic crater, typically one formed by a major eruption."
+    },
+    {
+      "id": "landmark-008",
+      "name": "Pool",
+      "name_ko": "웅덩이/연못",
+      "type": "Landmark",
+      "description": "A small area of still water."
+    },
+    {
+      "id": "landmark-009",
+      "name": "Garden",
+      "name_ko": "정원",
+      "type": "Landmark",
+      "description": "A piece of ground adjoined to a house, used for growing flowers, fruit, or vegetables."
+    },
+    {
+      "id": "landmark-010",
+      "name": "Village",
+      "name_ko": "마을",
+      "type": "Landmark",
+      "description": "A group of houses and associated buildings, larger than a hamlet and smaller than a town."
+    },
+    {
+      "id": "landmark-011",
+      "name": "Trail",
+      "name_ko": "오솔길/추적로",
+      "type": "Landmark",
+      "description": "A beaten path through the countryside."
+    },
+    {
+      "id": "landmark-012",
+      "name": "Tower",
+      "name_ko": "탑",
+      "type": "Landmark",
+      "description": "A tall, narrow building, either freestanding or forming part of a larger structure."
+    },
+    {
+      "id": "landmark-013",
+      "name": "Settlement",
+      "name_ko": "정착지",
+      "type": "Landmark",
+      "description": "A place, typically one previously uninhabited, where people establish a community."
+    },
+    {
+      "id": "landmark-014",
+      "name": "Beach",
+      "name_ko": "해변",
+      "type": "Landmark",
+      "description": "A pebbly or sandy shore, especially by the ocean."
+    },
+    {
+      "id": "landmark-015",
+      "name": "Town",
+      "name_ko": "마을/소도시",
+      "type": "Landmark",
+      "description": "An urban area that has a name, defined boundaries, and local government."
+    },
+    {
+      "id": "landmark-016",
+      "name": "Stone",
+      "name_ko": "돌/선돌",
+      "type": "Landmark",
+      "description": "A hard solid non-metallic mineral matter of which rock is made."
+    },
+    {
+      "id": "landmark-017",
+      "name": "Peak",
+      "name_ko": "봉우리",
+      "type": "Landmark",
+      "description": "The pointed top of a mountain."
+    },
+    {
+      "id": "landmark-018",
+      "name": "Street",
+      "name_ko": "거리/가로",
+      "type": "Landmark",
+      "description": "A public road in a city or town, typically with houses and buildings on one or both sides."
+    },
+    {
+      "id": "landmark-031",
+      "name": "Mine",
+      "name_ko": "광산",
+      "type": "Landmark",
+      "description": "An excavation in the earth for extracting coal or other minerals."
+    },
+    {
+      "id": "landmark-032",
+      "name": "Cave",
+      "name_ko": "동굴",
+      "type": "Landmark",
+      "description": "A natural underground chamber in a hillside or cliff."
+    },
+    {
+      "id": "landmark-033",
+      "name": "Path",
+      "name_ko": "길/경로",
+      "type": "Landmark",
+      "description": "A way or track laid down for walking or made by continual treading."
+    },
+    {
+      "id": "landmark-034",
+      "name": "Library",
+      "name_ko": "도서관",
+      "type": "Landmark",
+      "description": "A building or room containing collections of books and periodicals."
+    },
+    {
+      "id": "landmark-035",
+      "name": "Hotel",
+      "name_ko": "호텔/여관",
+      "type": "Landmark",
+      "description": "An establishment providing accommodation, meals, and other services for travelers."
+    },
+    {
+      "id": "landmark-036",
+      "name": "Quarry",
+      "name_ko": "채석장",
+      "type": "Landmark",
+      "description": "A place, typically a large, deep pit, from which stone or other materials are extracted."
+    },
+    {
+      "id": "landmark-037",
+      "name": "Crossing",
+      "name_ko": "교차로/건널목",
+      "type": "Landmark",
+      "description": "A place where two roads, tracks, or paths intersect."
+    },
+    {
+      "id": "landmark-038",
+      "name": "Graveyard",
+      "name_ko": "묘지",
+      "type": "Landmark",
+      "description": "A burial ground; a cemetery."
+    },
+    {
+      "id": "landmark-039",
+      "name": "Tunnel",
+      "name_ko": "터널",
+      "type": "Landmark",
+      "description": "An artificial underground passage, especially one built through a hill or under a building."
+    },
+    {
+      "id": "landmark-040",
+      "name": "Pond",
+      "name_ko": "연못",
+      "type": "Landmark",
+      "description": "A small body of still water formed naturally or by hollowing or embanking."
+    },
+    {
+      "id": "landmark-041",
+      "name": "Gate",
+      "name_ko": "관문/대문",
+      "type": "Landmark",
+      "description": "A hinged barrier used to close an opening in a wall, fence, or hedge."
+    },
+    {
+      "id": "landmark-042",
+      "name": "Dam",
+      "name_ko": "댐",
+      "type": "Landmark",
+      "description": "A barrier constructed to hold back water and raise its level."
+    },
+    {
+      "id": "landmark-053",
+      "name": "Gorge",
+      "name_ko": "협곡/골짜기",
+      "type": "Landmark",
+      "description": "A narrow valley between hills or mountains, typically with steep rocky walls and a stream running through it."
+    },
+    {
+      "id": "landmark-054",
+      "name": "Plateau",
+      "name_ko": "고원",
+      "type": "Landmark",
+      "description": "An area of relatively level high ground."
+    },
+    {
+      "id": "landmark-055",
+      "name": "Volcano",
+      "name_ko": "화산",
+      "type": "Landmark",
+      "description": "A mountain or hill having a crater or vent through which lava, rock fragments, hot vapor, and gas are being or have been erupted from the earth's crust."
+    },
+    {
+      "id": "landmark-056",
+      "name": "Meadow",
+      "name_ko": "목초지/풀밭",
+      "type": "Landmark",
+      "description": "A piece of grassland, especially one used for hay."
+    },
+    {
+      "id": "landmark-057",
+      "name": "Pasture",
+      "name_ko": "방목장",
+      "type": "Landmark",
+      "description": "Land covered with grass and other low plants suitable for grazing animals, especially cattle or sheep."
+    },
+    {
+      "id": "landmark-058",
+      "name": "Camp",
+      "name_ko": "야영지/캠프",
+      "type": "Landmark",
+      "description": "A place with temporary accommodation of huts, tents, or other structures."
+    },
+    {
+      "id": "landmark-059",
+      "name": "Sanctuary",
+      "name_ko": "성소/피난처",
+      "type": "Landmark",
+      "description": "A holy place; a temple or church, or a place of refuge and safety."
+    },
+    {
+      "id": "landmark-060",
+      "name": "Bog",
+      "name_ko": "늪지/수렁",
+      "type": "Landmark",
+      "description": "Wet muddy ground too soft to support a heavy body."
+    },
+    {
+      "id": "landmark-061",
+      "name": "Slope",
+      "name_ko": "비탈/경사지",
+      "type": "Landmark",
+      "description": "A surface of which one end or side is at a higher level than another; a rising or falling ground."
+    },
+    {
+      "id": "landmark-062",
+      "name": "Statue",
+      "name_ko": "석상/조각상",
+      "type": "Landmark",
+      "description": "A carved or cast figure of a person or animal, especially one that is life-size or larger."
+    },
+    {
+      "id": "landmark-063",
+      "name": "Stadium",
+      "name_ko": "경기장",
+      "type": "Landmark",
+      "description": "A large built-up structure with tiers of seats for spectators at sporting events."
+    },
+    {
+      "id": "landmark-064",
+      "name": "Sea",
+      "name_ko": "바다",
+      "type": "Landmark",
+      "description": "The expanse of salt water that covers most of the earth's surface and surrounds its landmasses."
+    },
+    {
+      "id": "landmark-065",
+      "name": "Mound",
+      "name_ko": "언덕/고분",
+      "type": "Landmark",
+      "description": "A rounded mass of projecting earth or stone, often artificial."
+    },
+    {
+      "id": "landmark-066",
+      "name": "Palace",
+      "name_ko": "궁전/대궐",
+      "type": "Landmark",
+      "description": "A large and impressive building forming the official residence of a ruler or dignitary."
+    },
+    {
+      "id": "landmark-067",
+      "name": "Dump",
+      "name_ko": "쓰레기장/폐기물 처리장",
+      "type": "Landmark",
+      "description": "A site for depositing garbage or waste material."
+    },
+    {
+      "id": "landmark-068",
+      "name": "Coast",
+      "name_ko": "해안",
+      "type": "Landmark",
+      "description": "The part of the land adjoining or near the sea."
+    },
+    {
+      "id": "landmark-069",
+      "name": "Thicket",
+      "name_ko": "덤불/수풀",
+      "type": "Landmark",
+      "description": "A dense group of bushes or trees."
+    },
+    {
+      "id": "landmark-070",
+      "name": "Maze",
+      "name_ko": "미로",
+      "type": "Landmark",
+      "description": "A network of paths and hedges designed as a puzzle through which one has to find a way."
+    },
+    {
+      "id": "landmark-071",
+      "name": "Plaza",
+      "name_ko": "광장",
+      "type": "Landmark",
+      "description": "A public square, marketplace, or similar open space in a built-up area."
+    },
+    {
+      "id": "landmark-072",
+      "name": "Bay",
+      "name_ko": "만(灣)",
+      "type": "Landmark",
+      "description": "A broad inlet of the sea where the land curves inward."
+    },
+    {
+      "id": "landmark-073",
+      "name": "Clearing",
+      "name_ko": "공터/개활지",
+      "type": "Landmark",
+      "description": "An open space in a forest, especially one cleared for cultivation."
+    },
+    {
+      "id": "landmark-074",
+      "name": "Floodplain",
+      "name_ko": "범람원",
+      "type": "Landmark",
+      "description": "An area of low-lying ground adjacent to a river, formed mainly of river sediments and subject to flooding."
+    },
+    {
+      "id": "landmark-075",
+      "name": "Glade",
+      "name_ko": "숲속 빈터",
+      "type": "Landmark",
+      "description": "An open space in a forest."
+    },
+    {
+      "id": "landmark-076",
+      "name": "Crossroad",
+      "name_ko": "교차로/길목",
+      "type": "Landmark",
+      "description": "A road that crosses another road; an intersection."
+    },
+    {
+      "id": "landmark-077",
+      "name": "Restaurant",
+      "name_ko": "식당/음식점",
+      "type": "Landmark",
+      "description": "A place where people pay to sit and eat meals that are cooked and served on the premises."
+    }
+  ],
+  "namesake": [
+    { "id": "name-001", "name": "Windy", "name_ko": "바람 부는", "type": "Namesake" },
+    {
+      "id": "name-002",
+      "name": "Where Nothing Grows",
+      "name_ko": "아무것도 자라지 않는 곳",
+      "type": "Namesake"
+    },
+    { "id": "name-003", "name": "Of Shade", "name_ko": "그림자의", "type": "Namesake" },
+    { "id": "name-004", "name": "Of Towers", "name_ko": "탑들의", "type": "Namesake" },
+    { "id": "name-005", "name": "Crooked", "name_ko": "구부러진/부정한", "type": "Namesake" },
+    { "id": "name-006", "name": "Under Heaven", "name_ko": "하늘 아래", "type": "Namesake" },
+    { "id": "name-007", "name": "Of Mouths", "name_ko": "입들의", "type": "Namesake" },
+    { "id": "name-008", "name": "Of Maps", "name_ko": "지도의", "type": "Namesake" },
+    { "id": "name-009", "name": "Winking", "name_ko": "눈을 깜빡이는", "type": "Namesake" },
+    { "id": "name-010", "name": "That Watches", "name_ko": "지켜보는 것", "type": "Namesake" },
+    { "id": "name-011", "name": "Of Youth", "name_ko": "젊음의/청춘의", "type": "Namesake" },
+    { "id": "name-012", "name": "Of Sickles", "name_ko": "낫의", "type": "Namesake" },
+    { "id": "name-013", "name": "Towering", "name_ko": "높이 솟은", "type": "Namesake" },
+    {
+      "id": "name-014",
+      "name": "Where No Rain Falls",
+      "name_ko": "비가 내리지 않는 곳",
+      "type": "Namesake"
+    },
+    { "id": "name-015", "name": "Of Hope", "name_ko": "희망의", "type": "Namesake" },
+    { "id": "name-016", "name": "Of Stone", "name_ko": "돌의", "type": "Namesake" },
+    { "id": "name-033", "name": "Winter", "name_ko": "겨울의", "type": "Namesake" },
+    {
+      "id": "name-034",
+      "name": "That Will Never Die",
+      "name_ko": "결코 죽지 않을",
+      "type": "Namesake"
+    },
+    { "id": "name-035", "name": "Of Smoke", "name_ko": "연기의", "type": "Namesake" },
+    { "id": "name-036", "name": "Of Blessings", "name_ko": "축복의", "type": "Namesake" },
+    { "id": "name-037", "name": "Undaunted", "name_ko": "의연한/굴하지 않는", "type": "Namesake" },
+    { "id": "name-038", "name": "Of Poets", "name_ko": "시인들의", "type": "Namesake" },
+    { "id": "name-039", "name": "Of Pigs", "name_ko": "돼지들의", "type": "Namesake" },
+    {
+      "id": "name-040",
+      "name": "Where No Bird Sings",
+      "name_ko": "새가 노래하지 않는 곳",
+      "type": "Namesake"
+    },
+    { "id": "name-041", "name": "Talking", "name_ko": "말하는", "type": "Namesake" },
+    { "id": "name-042", "name": "That Waits", "name_ko": "기다리는 자", "type": "Namesake" },
+    { "id": "name-043", "name": "Of Mists", "name_ko": "안개의", "type": "Namesake" },
+    { "id": "name-044", "name": "Of Peace", "name_ko": "평화의", "type": "Namesake" },
+    { "id": "name-045", "name": "Summer", "name_ko": "여름의", "type": "Namesake" },
+    { "id": "name-046", "name": "Of Feathers", "name_ko": "깃털의", "type": "Namesake" },
+    { "id": "name-047", "name": "Of Hunters", "name_ko": "사냥꾼들의", "type": "Namesake" },
+    { "id": "name-048", "name": "Without Walls", "name_ko": "벽이 없는", "type": "Namesake" },
+    { "id": "name-049", "name": "Sinking", "name_ko": "가라앉는", "type": "Namesake" },
+    {
+      "id": "name-050",
+      "name": "That Does Not Kneel",
+      "name_ko": "무릎 꿇지 않는 자",
+      "type": "Namesake"
+    },
+    { "id": "name-051", "name": "Of Ice", "name_ko": "얼음의", "type": "Namesake" },
+    { "id": "name-052", "name": "Of Philosophers", "name_ko": "철학자들의", "type": "Namesake" },
+    { "id": "name-053", "name": "Mourner's", "name_ko": "애도자의", "type": "Namesake" },
+    { "id": "name-054", "name": "Of Sound", "name_ko": "소리의", "type": "Namesake" },
+    { "id": "name-055", "name": "Of Moss", "name_ko": "이끼의", "type": "Namesake" },
+    { "id": "name-056", "name": "In Black And White", "name_ko": "흑백의", "type": "Namesake" },
+    { "id": "name-057", "name": "Roaming", "name_ko": "떠도는/배회하는", "type": "Namesake" },
+    { "id": "name-058", "name": "That Knows", "name_ko": "알고 있는 자", "type": "Namesake" },
+    { "id": "name-059", "name": "Of Fools", "name_ko": "바보들의", "type": "Namesake" },
+    { "id": "name-060", "name": "Of Glass", "name_ko": "유리의", "type": "Namesake" },
+    { "id": "name-061", "name": "Laughing", "name_ko": "웃고 있는", "type": "Namesake" },
+    { "id": "name-062", "name": "Without Gods", "name_ko": "신이 없는", "type": "Namesake" },
+    { "id": "name-063", "name": "Of Vines", "name_ko": "덩굴의", "type": "Namesake" },
+    { "id": "name-064", "name": "Of Builders", "name_ko": "건설자들의", "type": "Namesake" },
+    { "id": "name-065", "name": "Shattered", "name_ko": "산산조각난", "type": "Namesake" },
+    { "id": "name-066", "name": "That Sleeps", "name_ko": "잠든 자", "type": "Namesake" },
+    { "id": "name-067", "name": "Of Flags", "name_ko": "깃발들의", "type": "Namesake" },
+    { "id": "name-068", "name": "Of Strays", "name_ko": "떠돌이들의", "type": "Namesake" },
+    { "id": "name-069", "name": "Songless", "name_ko": "노래가 사라진", "type": "Namesake" },
+    {
+      "id": "name-070",
+      "name": "Where Flowers Grow",
+      "name_ko": "꽃이 피어나는 곳",
+      "type": "Namesake"
+    },
+    { "id": "name-071", "name": "Of Gems", "name_ko": "보석의", "type": "Namesake" },
+    { "id": "name-072", "name": "Of Clocks", "name_ko": "시계의", "type": "Namesake" },
+    { "id": "name-073", "name": "Quivering", "name_ko": "떨리는/흔들리는", "type": "Namesake" },
+    { "id": "name-074", "name": "That Remembers", "name_ko": "기억하는 자", "type": "Namesake" },
+    { "id": "name-075", "name": "Of Vertigo", "name_ko": "현기증의", "type": "Namesake" },
+    { "id": "name-076", "name": "Of Shrines", "name_ko": "성소들의", "type": "Namesake" },
+    { "id": "name-077", "name": "Rising", "name_ko": "떠오르는/솟구치는", "type": "Namesake" },
+    {
+      "id": "name-078",
+      "name": "Where No One Goes",
+      "name_ko": "아무도 가지 않는 곳",
+      "type": "Namesake"
+    },
+    { "id": "name-079", "name": "Of Lightning", "name_ko": "번개의", "type": "Namesake" },
+    { "id": "name-080", "name": "Of Despair", "name_ko": "절망의", "type": "Namesake" },
+    { "id": "name-081", "name": "Wanton", "name_ko": "방자한/변덕스러운", "type": "Namesake" },
+    { "id": "name-082", "name": "That Walks", "name_ko": "걷는 자", "type": "Namesake" },
+    { "id": "name-083", "name": "Of Clay", "name_ko": "진흙의", "type": "Namesake" },
+    { "id": "name-084", "name": "Of Books", "name_ko": "책들의", "type": "Namesake" },
+    { "id": "name-085", "name": "Razor", "name_ko": "면도날처럼 날카로운", "type": "Namesake" },
+    { "id": "name-086", "name": "Without Locks", "name_ko": "자물쇠가 없는", "type": "Namesake" },
+    { "id": "name-087", "name": "Of Rebels", "name_ko": "반항아들의", "type": "Namesake" },
+    { "id": "name-088", "name": "Of Worms", "name_ko": "벌레들의", "type": "Namesake" },
+    { "id": "name-089", "name": "First", "name_ko": "최초의", "type": "Namesake" },
+    { "id": "name-090", "name": "That Grows", "name_ko": "자라나는 것", "type": "Namesake" },
+    { "id": "name-091", "name": "Of Blisters", "name_ko": "물집의", "type": "Namesake" },
+    { "id": "name-092", "name": "Of Refugees", "name_ko": "난민들의", "type": "Namesake" },
+    { "id": "name-093", "name": "Glorious", "name_ko": "영광스러운", "type": "Namesake" },
+    { "id": "name-094", "name": "That Forgot", "name_ko": "망각한 자", "type": "Namesake" },
+    { "id": "name-095", "name": "Of Coincidence", "name_ko": "우연의", "type": "Namesake" },
+    { "id": "name-096", "name": "Of Caves", "name_ko": "동굴의", "type": "Namesake" },
+    { "id": "name-097", "name": "Meandering", "name_ko": "굽이치는", "type": "Namesake" },
+    { "id": "name-098", "name": "That Laughs", "name_ko": "웃는 자", "type": "Namesake" },
+    { "id": "name-099", "name": "Of The Revolution", "name_ko": "혁명의", "type": "Namesake" },
+    { "id": "name-100", "name": "Of Perfume", "name_ko": "향수의", "type": "Namesake" },
+    { "id": "name-101", "name": "Wild", "name_ko": "야생의/거친", "type": "Namesake" },
+    {
+      "id": "name-102",
+      "name": "Of Broken Promises",
+      "name_ko": "깨진 약속의",
+      "type": "Namesake"
+    },
+    { "id": "name-103", "name": "Of Seeing", "name_ko": "보는 것의/선견의", "type": "Namesake" },
+    { "id": "name-104", "name": "Of Skulls", "name_ko": "해골의", "type": "Namesake" },
+    { "id": "name-105", "name": "Low", "name_ko": "낮은", "type": "Namesake" },
+    { "id": "name-106", "name": "That Sings", "name_ko": "노래하는 자", "type": "Namesake" },
+    { "id": "name-107", "name": "Of Spines", "name_ko": "척추/가시의", "type": "Namesake" },
+    { "id": "name-108", "name": "Of Ancestors", "name_ko": "조상들의", "type": "Namesake" },
+    { "id": "name-109", "name": "Murmuring", "name_ko": "속삭이는/중얼거리는", "type": "Namesake" },
+    { "id": "name-110", "name": "On The Border", "name_ko": "경계에 있는", "type": "Namesake" },
+    { "id": "name-111", "name": "Of Stalks", "name_ko": "줄기의", "type": "Namesake" },
+    { "id": "name-112", "name": "Of Servants", "name_ko": "하인들의", "type": "Namesake" },
+    { "id": "name-113", "name": "Lonely", "name_ko": "외로운", "type": "Namesake" },
+    {
+      "id": "name-114",
+      "name": "That Isn't There",
+      "name_ko": "그곳에 없는 것",
+      "type": "Namesake"
+    },
+    { "id": "name-115", "name": "Of Outcasts", "name_ko": "추방자들의", "type": "Namesake" },
+    { "id": "name-116", "name": "Of Judges", "name_ko": "심판관들의", "type": "Namesake" },
+    { "id": "name-117", "name": "Holy", "name_ko": "성스러운", "type": "Namesake" },
+    { "id": "name-118", "name": "Without Strife", "name_ko": "갈등이 없는", "type": "Namesake" },
+    { "id": "name-119", "name": "Of Grapes", "name_ko": "포도의", "type": "Namesake" },
+    { "id": "name-120", "name": "Of Questions", "name_ko": "질문들의", "type": "Namesake" },
+    { "id": "name-121", "name": "Last", "name_ko": "마지막의", "type": "Namesake" },
+    {
+      "id": "name-122",
+      "name": "That Went Too Far",
+      "name_ko": "너무 멀리 가버린 자",
+      "type": "Namesake"
+    },
+    { "id": "name-123", "name": "Of Jade", "name_ko": "비취의", "type": "Namesake" },
+    { "id": "name-124", "name": "Of Memory", "name_ko": "기억의", "type": "Namesake" },
+    { "id": "name-125", "name": "Hidden", "name_ko": "숨겨진", "type": "Namesake" },
+    {
+      "id": "name-126",
+      "name": "On The Road To Nowhere",
+      "name_ko": "어디로도 가지 않는 길 위의",
+      "type": "Namesake"
+    },
+    { "id": "name-127", "name": "Of Branches", "name_ko": "가지들의", "type": "Nhamesake" },
+    { "id": "name-128", "name": "Of Cups", "name_ko": "잔의", "type": "Namesake" },
+    { "id": "name-129", "name": "Bitter", "name_ko": "쓰라린/지독한", "type": "Namesake" },
+    { "id": "name-130", "name": "That Dreams", "name_ko": "꿈꾸는 자", "type": "Namesake" },
+    { "id": "name-131", "name": "Of Paper", "name_ko": "종이의", "type": "Namesake" },
+    { "id": "name-132", "name": "Of Last Chances", "name_ko": "마지막 기회의", "type": "Namesake" },
+    { "id": "name-133", "name": "High", "name_ko": "높은", "type": "Namesake" },
+    { "id": "name-134", "name": "Without Gates", "name_ko": "문이 없는", "type": "Namesake" },
+    { "id": "name-135", "name": "Of Orchards", "name_ko": "과수원의", "type": "Namesake" },
+    { "id": "name-136", "name": "Of Burdens", "name_ko": "짐/부담의", "type": "Namesake" },
+    { "id": "name-137", "name": "Golden", "name_ko": "황금빛의", "type": "Namesake" },
+    { "id": "name-138", "name": "That Weeps", "name_ko": "우는 자", "type": "Namesake" },
+    { "id": "name-139", "name": "Of Cloth", "name_ko": "천/옷감의", "type": "Namesake" },
+    { "id": "name-140", "name": "Of Secrets", "name_ko": "비밀의", "type": "Namesake" },
+    { "id": "name-141", "name": "Green", "name_ko": "초록의/푸른", "type": "Namesake" },
+    { "id": "name-142", "name": "Beyond Hope", "name_ko": "희망 너머의", "type": "Namesake" },
+    { "id": "name-143", "name": "Of Flies", "name_ko": "파리들의", "type": "Namesake" },
+    { "id": "name-144", "name": "Of Independence", "name_ko": "독립의", "type": "Namesake" },
+    { "id": "name-145", "name": "God-touched", "name_ko": "신의 손길이 닿은", "type": "Namesake" },
+    {
+      "id": "name-146",
+      "name": "Where Heaven And Earth Meet",
+      "name_ko": "하늘과 땅이 만나는 곳",
+      "type": "Namesake"
+    },
+    { "id": "name-147", "name": "Of Ink", "name_ko": "잉크의", "type": "Namesake" },
+    { "id": "name-148", "name": "Of Lies", "name_ko": "거짓의", "type": "Namesake" },
+    { "id": "name-149", "name": "Red", "name_ko": "붉은", "type": "Namesake" },
+    { "id": "name-150", "name": "Without Regret", "name_ko": "후회 없는", "type": "Namesake" },
+    { "id": "name-151", "name": "Of Chimes", "name_ko": "풍경/종소리의", "type": "Namesake" },
+    { "id": "name-152", "name": "Of The Sky", "name_ko": "하늘의", "type": "Namesake" },
+    { "id": "name-153", "name": "Forgotten", "name_ko": "잊혀진", "type": "Namesake" },
+    {
+      "id": "name-154",
+      "name": "At The Crossroads",
+      "name_ko": "교차로에 있는",
+      "type": "Namesake"
+    },
+    { "id": "name-155", "name": "Of Rivers", "name_ko": "강들의", "type": "Namesake" },
+    { "id": "name-156", "name": "Of Dyes", "name_ko": "염료의", "type": "Namesake" },
+    { "id": "name-157", "name": "Glittering", "name_ko": "반짝이는", "type": "Namesake" },
+    { "id": "name-158", "name": "That Gave Up", "name_ko": "포기한 자", "type": "Namesake" },
+    { "id": "name-159", "name": "Of Songs", "name_ko": "노래들의", "type": "Namesake" },
+    { "id": "name-160", "name": "Of Many Paths", "name_ko": "수많은 길의", "type": "Namesake" },
+    { "id": "name-161", "name": "Rainbow", "name_ko": "무지개 빛의", "type": "Namesake" },
+    { "id": "name-162", "name": "Without Maps", "name_ko": "지도가 없는", "type": "Namesake" },
+    { "id": "name-163", "name": "Of Flight", "name_ko": "비행의/도주의", "type": "Namesake" },
+    { "id": "name-164", "name": "Of Lakes", "name_ko": "호수들의", "type": "Namesake" },
+    { "id": "name-165", "name": "Blue", "name_ko": "푸른/우울한", "type": "Namesake" },
+    {
+      "id": "name-166",
+      "name": "That Only Exists On Paper",
+      "name_ko": "종이 위에만 존재하는",
+      "type": "Namesake"
+    },
+    { "id": "name-167", "name": "Of Sorrows", "name_ko": "슬픔의", "type": "Namesake" },
+    { "id": "name-168", "name": "Of The Sun", "name_ko": "태양의", "type": "Namesake" },
+    { "id": "name-169", "name": "Free", "name_ko": "자유로운", "type": "Namesake" },
+    { "id": "name-170", "name": "Before The Fall", "name_ko": "몰락 이전의", "type": "Namesake" },
+    { "id": "name-171", "name": "Of Prayers", "name_ko": "기도의", "type": "Namesake" },
+    { "id": "name-172", "name": "Of The Flood", "name_ko": "홍수의", "type": "Namesake" },
+    { "id": "name-173", "name": "Bristling", "name_ko": "곤두선/거친", "type": "Namesake" },
+    {
+      "id": "name-174",
+      "name": "That Declared War",
+      "name_ko": "전쟁을 선포한 자",
+      "type": "Namesake"
+    },
+    { "id": "name-175", "name": "Of Bruises", "name_ko": "멍/상처의", "type": "Namesake" },
+    { "id": "name-176", "name": "Of Brambles", "name_ko": "가시덤불의", "type": "Namesake" },
+    { "id": "name-177", "name": "Rogue", "name_ko": "부랑자의/독고다이", "type": "Namesake" },
+    {
+      "id": "name-178",
+      "name": "Where Mushrooms Grow",
+      "name_ko": "버섯이 자라는 곳",
+      "type": "Namesake"
+    },
+    { "id": "name-179", "name": "Of Rifts", "name_ko": "균열의", "type": "Namesake" },
+    { "id": "name-180", "name": "Of Children", "name_ko": "아이들의", "type": "Namesake" },
+    { "id": "name-181", "name": "Unseen", "name_ko": "보이지 않는", "type": "Namesake" },
+    { "id": "name-182", "name": "That Breathes", "name_ko": "숨 쉬는 자", "type": "Namesake" },
+    { "id": "name-183", "name": "Of The Gods", "name_ko": "신들의", "type": "Namesake" },
+    { "id": "name-184", "name": "Of Fire", "name_ko": "불의", "type": "Namesake" },
+    { "id": "name-185", "name": "Empty", "name_ko": "텅 빈", "type": "Namesake" },
+    {
+      "id": "name-186",
+      "name": "At The End Of The World",
+      "name_ko": "세상 끝에 있는",
+      "type": "Namesake"
+    },
+    { "id": "name-187", "name": "Of Lungs", "name_ko": "폐/호흡의", "type": "Namesake" },
+    { "id": "name-188", "name": "Of Gold", "name_ko": "금의", "type": "Namesake" },
+    { "id": "name-189", "name": "Masterless", "name_ko": "주인 없는", "type": "Namesake" },
+    { "id": "name-190", "name": "That Hums", "name_ko": "콧노래를 부르는 자", "type": "Namesake" },
+    { "id": "name-191", "name": "Of Healing", "name_ko": "치유의", "type": "Namesake" },
+    { "id": "name-192", "name": "Of Statues", "name_ko": "석상들의", "type": "Namesake" },
+    { "id": "name-193", "name": "Upper", "name_ko": "위쪽의/상층의", "type": "Namesake" },
+    { "id": "name-194", "name": "Beyond Fear", "name_ko": "공포 너머의", "type": "Namesake" },
+    { "id": "name-195", "name": "Of Hooks", "name_ko": "갈고리의", "type": "Namesake" },
+    { "id": "name-196", "name": "Of Meadows", "name_ko": "목초지의", "type": "Namesake" },
+    { "id": "name-197", "name": "Narrow", "name_ko": "좁은", "type": "Namesake" },
+    { "id": "name-198", "name": "That Creaks", "name_ko": "삐걱거리는 것", "type": "Namesake" },
+    { "id": "name-199", "name": "Of Truth", "name_ko": "진실의", "type": "Namesake" },
+    { "id": "name-200", "name": "Of Ghosts", "name_ko": "유령의", "type": "Namesake" },
+    { "id": "name-201", "name": "Bleak", "name_ko": "암울한/황량한", "type": "Namesake" },
+    { "id": "name-202", "name": "At The Bottom", "name_ko": "바닥에 있는", "type": "Namesake" },
+    { "id": "name-203", "name": "Of Answers", "name_ko": "답변의/해답의", "type": "Namesake" },
+    { "id": "name-204", "name": "Of Wings", "name_ko": "날개의", "type": "Namesake" },
+    { "id": "name-205", "name": "Hissing", "name_ko": "쉭쉭 소리를 내는", "type": "Namesake" },
+    { "id": "name-206", "name": "Without Fear", "name_ko": "두려움 없는", "type": "Namesake" },
+    { "id": "name-207", "name": "Of Guardians", "name_ko": "수호자들의", "type": "Namesake" },
+    { "id": "name-208", "name": "Of The Moon", "name_ko": "달의", "type": "Namesake" }
+  ],
+  "origin": [
+    {
+      "id": "origin-001",
+      "name": "Said To Have Been The Home Of God(s)",
+      "name_ko": "신(들)의 고향이라 전해지는",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-002",
+      "name": "Last Known Location Of An Ancient Artifact",
+      "name_ko": "고대 유물의 마지막 발견 장소",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-003",
+      "name": "Shaped By Landslide(s)",
+      "name_ko": "산사태로 형성된",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-004",
+      "name": "Home Of A Vanished People",
+      "name_ko": "사라진 민족의 고향",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-005",
+      "name": "Founded By Outcast(s)",
+      "name_ko": "추방자들에 의해 세워진",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-006",
+      "name": "Shaped By Centuries Of War",
+      "name_ko": "수백 년간의 전쟁이 빚어낸",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-007",
+      "name": "Former Habitat Of An Extinct Species",
+      "name_ko": "멸종된 종의 과거 서식지",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-008",
+      "name": "Former Trading Hub",
+      "name_ko": "과거 무역의 중심지",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-009",
+      "name": "Site Of An Infamous Heist",
+      "name_ko": "악명 높은 강도 사건의 현장",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-010",
+      "name": "Abandoned When Mineral Deposit(s) Ran Out",
+      "name_ko": "광물이 고갈되자 버려진",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-011",
+      "name": "Site Of A Notorious Bet",
+      "name_ko": "악명 높은 내기가 벌어진 곳",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-012",
+      "name": "Created To Keep A Promise",
+      "name_ko": "약속을 지키기 위해 만들어진",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-013",
+      "name": "Site Of A Famous Scientific Discovery",
+      "name_ko": "유명한 과학적 발견의 현장",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-014",
+      "name": "Site Of An Infamous Duel",
+      "name_ko": "악명 높은 결투가 벌어진 곳",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-015",
+      "name": "Created By The Meeting Of Two Cultures",
+      "name_ko": "두 문화의 만남으로 탄생한",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-016",
+      "name": "Birthplace Of A World Religion",
+      "name_ko": "세계적인 종교의 발상지",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-017",
+      "name": "Was Once A Living Entity",
+      "name_ko": "한때 살아있는 생명체였던",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-018",
+      "name": "Site Of A Famous Race Between Rivals",
+      "name_ko": "라이벌 간의 유명한 경주가 벌어진 곳",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-019",
+      "name": "Site Of The Oldest Recorded Culture",
+      "name_ko": "기록된 가장 오래된 문화의 유적지",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-020",
+      "name": "Origin Of A Famous Art Style",
+      "name_ko": "유명한 예술 양식의 기원지",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-021",
+      "name": "Shaped By Flood(s)",
+      "name_ko": "홍수로 인해 형성된",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-022",
+      "name": "Site Of A Famous Execution",
+      "name_ko": "유명한 처형이 집행된 곳",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-023",
+      "name": "Homeland Of A Displaced People",
+      "name_ko": "추방된 민족의 고향",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-024",
+      "name": "Founded As Gang Headquarters",
+      "name_ko": "갱단의 본거지로 세워진",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-025",
+      "name": "Former Training Ground",
+      "name_ko": "과거의 훈련소",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-026",
+      "name": "Site Of A Famous Negotiation",
+      "name_ko": "유명한 협상이 이루어진 곳",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-027",
+      "name": "Created To Avoid War",
+      "name_ko": "전쟁을 피하기 위해 만들어진",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-028",
+      "name": "Birthplace Of A Legendary Prophet",
+      "name_ko": "전설적인 예언자의 탄생지",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-029",
+      "name": "Was Once Overflowing With Greenery",
+      "name_ko": "한때 녹음이 우거졌던",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-030",
+      "name": "Site Of A Tragic Death",
+      "name_ko": "비극적인 죽음의 현장",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-031",
+      "name": "Former Seat Of A Fallen Empire",
+      "name_ko": "몰락한 제국의 과거 중심지",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-032",
+      "name": "Founded By A Secret Society",
+      "name_ko": "비밀 결사에 의해 세워진",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-033",
+      "name": "Was Once A Secret Location",
+      "name_ko": "한때 비밀스러운 장소였던",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-034",
+      "name": "Site Of A Famous Performance",
+      "name_ko": "유명한 공연이 열렸던 곳",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-035",
+      "name": "Built With Stolen Wealth",
+      "name_ko": "훔친 재물로 건설된",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-036",
+      "name": "Origin Of A Popular Folk Song",
+      "name_ko": "인기 있는 민요의 발상지",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-037",
+      "name": "Shaped By An Ancient River",
+      "name_ko": "고대 강줄기에 의해 형성된",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-038",
+      "name": "Site Of A Colonial Leader's Defeat",
+      "name_ko": "식민지 지도자가 패배한 곳",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-039",
+      "name": "Birthplace Of A Notorious Outlaw",
+      "name_ko": "악명 높은 무법자의 탄생지",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-040",
+      "name": "Began As A Memorial",
+      "name_ko": "기념비로 시작된",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-041",
+      "name": "Was Once Encased In Ice",
+      "name_ko": "한때 빙하에 갇혀 있었던",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-042",
+      "name": "Linked To Apocalyptic Lore",
+      "name_ko": "종말의 전설과 연결된",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-043",
+      "name": "Site Of A Tactical Blunder",
+      "name_ko": "전술적 실책이 벌어진 곳",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-044",
+      "name": "Founded As A Claim Of Independence",
+      "name_ko": "독립의 상징으로 세워진",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-045",
+      "name": "Originally In A Different Location",
+      "name_ko": "원래는 다른 곳에 위치했던",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-046",
+      "name": "Origin Of A Popular Game Or Sport",
+      "name_ko": "인기 있는 게임이나 스포츠의 발상지",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-047",
+      "name": "Former Dictatorship",
+      "name_ko": "과거의 독재 국가/지역",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-048",
+      "name": "Abandoned When Trade Routes Changed",
+      "name_ko": "무역로가 바뀌면서 버려진",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-049",
+      "name": "Shaped By Tectonic Activity",
+      "name_ko": "지각 변동으로 형성된",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-050",
+      "name": "Site Of A Terrible Massacre",
+      "name_ko": "끔찍한 학살의 현장",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-051",
+      "name": "Origin Of An Infamous Military Tactic",
+      "name_ko": "악명 높은 군사 전술의 기원지",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-052",
+      "name": "Created To Imprison Something",
+      "name_ko": "무언가를 가두기 위해 만들어진",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-053",
+      "name": "Former Military Superpower",
+      "name_ko": "과거의 군사 강대국",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-054",
+      "name": "Subject Of A Civil War",
+      "name_ko": "내전의 중심지였던",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-055",
+      "name": "Discovered Due To A Lightning Strike",
+      "name_ko": "벼락 덕분에 발견된",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-056",
+      "name": "Created To Protect An Important Relic",
+      "name_ko": "중요한 유물을 보호하기 위해 만들어진",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-057",
+      "name": "Founded By A Repentant Criminal",
+      "name_ko": "회개한 범죄자에 의해 세워진",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-058",
+      "name": "Created Or Given As A Gift",
+      "name_ko": "선물로 만들어지거나 증정된",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-059",
+      "name": "Origin Of A Combat Style",
+      "name_ko": "전투 스타일의 발상지",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-060",
+      "name": "Founded For Military Protection",
+      "name_ko": "군사적 보호를 위해 설립된",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-061",
+      "name": "Appeared Overnight",
+      "name_ko": "하룻밤 사이에 나타난",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-062",
+      "name": "Origin Of A Now-Endangered Language",
+      "name_ko": "지금은 멸종 위기인 언어의 발상지",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-063",
+      "name": "Acquired In A Notoriously Bad Deal",
+      "name_ko": "악명 높은 최악의 거래로 획득한",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-064",
+      "name": "Created By Mistake",
+      "name_ko": "실수로 만들어진",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-065",
+      "name": "Site Of An Epic Betrayal",
+      "name_ko": "서사적인 배신이 일어난 곳",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-066",
+      "name": "Founded By Somebody Erased From History",
+      "name_ko": "역사에서 지워진 누군가에 의해 세워진",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-067",
+      "name": "Was Once Covered In Moss",
+      "name_ko": "한때 이끼로 뒤덮여 있었던",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-068",
+      "name": "Site Of An Ancient Conspiracy",
+      "name_ko": "고대 음모의 현장",
+      "type": "Origin"
+    },
+    { "id": "origin-069", "name": "Former Desert", "name_ko": "과거의 사막", "type": "Origin" },
+    {
+      "id": "origin-070",
+      "name": "Seceded From A Larger Territory",
+      "name_ko": "거대 영토에서 분리 독립한",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-071",
+      "name": "Originally A Temporary Settlement",
+      "name_ko": "원래는 임시 정착지였던",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-072",
+      "name": "Built On Stolen Land",
+      "name_ko": "훔친 땅 위에 세워진",
+      "type": "Origin"
+    },
+    { "id": "origin-073", "name": "Former Grasslands", "name_ko": "과거의 초원", "type": "Origin" },
+    {
+      "id": "origin-074",
+      "name": "Traded By Warring Nations",
+      "name_ko": "전쟁 중인 국가들 사이에 거래된",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-075",
+      "name": "Name Has Unknown Origins",
+      "name_ko": "이름의 기원이 알려지지 않은",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-076",
+      "name": "Founded By Performer(s)",
+      "name_ko": "공연가들에 의해 세워진",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-077",
+      "name": "Shaped By An Earthquake",
+      "name_ko": "지진으로 형성된",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-078",
+      "name": "Founded On A Joke Or Dare",
+      "name_ko": "장난이나 내기에서 시작된",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-079",
+      "name": "Shaped By Colonialism",
+      "name_ko": "식민주의에 의해 형성된",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-080",
+      "name": "Wonder Of The Ancient World",
+      "name_ko": "고대 세계의 경이",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-081",
+      "name": "Provided Haven During A Historic Disaster",
+      "name_ko": "역사적 재앙 기간 동안 안식처가 되어준",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-082",
+      "name": "Site Of A Famous Protest",
+      "name_ko": "유명한 시위가 벌어진 곳",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-083",
+      "name": "Shaped By Years Of Foreign Occupation",
+      "name_ko": "수년간의 외국 점령으로 형성된",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-084",
+      "name": "Linked To Lore About The Afterlife",
+      "name_ko": "사후 세계에 관한 전설과 연결된",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-085",
+      "name": "Site Of An Infamous Murder",
+      "name_ko": "악명 높은 살인 사건의 현장",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-086",
+      "name": "Was Once Considered A Paradise",
+      "name_ko": "한때 낙원으로 여겨졌던",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-087",
+      "name": "Cited As A Social Experiment",
+      "name_ko": "사회 실험의 사례로 언급되는",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-088",
+      "name": "Founded By A Beloved Leader",
+      "name_ko": "존경받는 지도자에 의해 세워진",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-089",
+      "name": "Site Of An Epic Betrayal",
+      "name_ko": "서사적인 배신이 일어난 곳",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-090",
+      "name": "Founded By Somebody Erased From History",
+      "name_ko": "역사에서 지워진 누군가에 의해 세워진",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-091",
+      "name": "Was Once Covered In Moss",
+      "name_ko": "한때 이끼로 뒤덮여 있었던",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-092",
+      "name": "Site Of An Ancient Conspiracy",
+      "name_ko": "고대 음모의 현장",
+      "type": "Origin"
+    },
+    { "id": "origin-093", "name": "Former Desert", "name_ko": "과거의 사막", "type": "Origin" },
+    {
+      "id": "origin-094",
+      "name": "Seceded From A Larger Territory",
+      "name_ko": "거대 영토에서 분리 독립한",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-095",
+      "name": "Originally A Temporary Settlement",
+      "name_ko": "원래는 임시 정착지였던",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-096",
+      "name": "Built On Stolen Land",
+      "name_ko": "훔친 땅 위에 세워진",
+      "type": "Origin"
+    },
+    { "id": "origin-097", "name": "Former Grasslands", "name_ko": "과거의 초원", "type": "Origin" },
+    {
+      "id": "origin-098",
+      "name": "Traded By Warring Nations",
+      "name_ko": "전쟁 중인 국가들 사이에 거래된",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-099",
+      "name": "Name Has Unknown Origins",
+      "name_ko": "이름의 기원이 알려지지 않은",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-100",
+      "name": "Founded By Performer(s)",
+      "name_ko": "공연가들에 의해 세워진",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-101",
+      "name": "Shaped By An Earthquake",
+      "name_ko": "지진으로 형성된",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-102",
+      "name": "Founded On A Joke Or Dare",
+      "name_ko": "장난이나 내기에서 시작된",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-103",
+      "name": "Shaped By Colonialism",
+      "name_ko": "식민주의에 의해 형성된",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-104",
+      "name": "Wonder Of The Ancient World",
+      "name_ko": "고대 세계의 경이",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-105",
+      "name": "Provided Haven During A Historic Disaster",
+      "name_ko": "역사적 재앙 기간 동안 안식처가 되어준",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-106",
+      "name": "Site Of A Famous Protest",
+      "name_ko": "유명한 시위가 벌어진 곳",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-107",
+      "name": "Shaped By Years Of Foreign Occupation",
+      "name_ko": "수년간의 외국 점령으로 형성된",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-108",
+      "name": "Linked To Lore About The Afterlife",
+      "name_ko": "사후 세계에 관한 전설과 연결된",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-109",
+      "name": "Site Of An Infamous Murder",
+      "name_ko": "악명 높은 살인 사건의 현장",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-110",
+      "name": "Was Once Considered A Paradise",
+      "name_ko": "한때 낙원으로 여겨졌던",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-111",
+      "name": "Cited As A Social Experiment",
+      "name_ko": "사회 실험의 사례로 언급되는",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-112",
+      "name": "Founded By A Beloved Leader",
+      "name_ko": "존경받는 지도자에 의해 세워진",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-113",
+      "name": "Site Of A Notorious Wedding",
+      "name_ko": "악명 높은 결혼식이 열렸던 곳",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-114",
+      "name": "Mentioned In Lore But The Exact Location Remains Hidden",
+      "name_ko": "전설에 언급되지만 정확한 위치는 숨겨진",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-115",
+      "name": "Reclaimed Industrial Land",
+      "name_ko": "개간된 산업 부지",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-116",
+      "name": "Origin Of An Unsolved Riddle",
+      "name_ko": "풀리지 않는 수수께끼의 기원",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-117",
+      "name": "Founded By An Unusual Guild",
+      "name_ko": "특이한 길드에 의해 세워진",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-118",
+      "name": "Shaped By A Big Collision Or Explosion",
+      "name_ko": "거대 충돌이나 폭발로 형성된",
+      "type": "Origin"
+    },
+    { "id": "origin-119", "name": "Former Wetlands", "name_ko": "과거의 습지", "type": "Origin" },
+    {
+      "id": "origin-120",
+      "name": "Origin Of An Artistic Masterpiece",
+      "name_ko": "예술적 걸작의 탄생지",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-121",
+      "name": "Site Of A Memorable Accident",
+      "name_ko": "기억에 남을 만한 사고 현장",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-122",
+      "name": "Birthplace Of A Famous Political Leader",
+      "name_ko": "유명한 정치 지도자의 탄생지",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-123",
+      "name": "Created As A Trap",
+      "name_ko": "함정으로 만들어진",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-124",
+      "name": "Site Of A Huge Misunderstanding",
+      "name_ko": "거대한 오해가 빚어진 곳",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-125",
+      "name": "Founded By A Child",
+      "name_ko": "아이에 의해 세워진",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-126",
+      "name": "Built With Blood Money",
+      "name_ko": "피 묻은 돈으로 건설된",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-127",
+      "name": "Shaped By A Terrible Storm",
+      "name_ko": "끔찍한 폭풍으로 형성된",
+      "type": "Origin"
+    },
+    {
+      "id": "origin-128",
+      "name": "Was Once Decimated By Plague",
+      "name_ko": "한때 전염병으로 황폐해졌던",
+      "type": "Origin"
+    }
+  ],
+  "attributes": [
+    {
+      "id": "attr-001",
+      "name": "Site Of An Auditory Phenomenon",
+      "name_ko": "청각적 현상이 발생하는 곳",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-002",
+      "name": "Habitat Of A Rare Insect",
+      "name_ko": "희귀 곤충의 서식지",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-003",
+      "name": "Skilled Foragers",
+      "name_ko": "숙련된 채집가들",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-004",
+      "name": "Elaborate Etiquette System",
+      "name_ko": "정교한 예법 시스템",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-005",
+      "name": "Constantly Cloudy",
+      "name_ko": "끊임없이 구름이 끼는",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-006",
+      "name": "Pilgrimage Destination",
+      "name_ko": "성지 순례지",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-007",
+      "name": "Haven For Artists",
+      "name_ko": "예술가들의 안식처",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-008",
+      "name": "Theocratic Government",
+      "name_ko": "신권 정치 체제",
+      "type": "Attribute"
+    },
+    { "id": "attr-009", "name": "Hunting Ground", "name_ko": "사냥터", "type": "Attribute" },
+    {
+      "id": "attr-010",
+      "name": "Known For Fossil(s)",
+      "name_ko": "화석으로 유명한",
+      "type": "Attribute"
+    },
+    { "id": "attr-011", "name": "Polluted", "name_ko": "오염된", "type": "Attribute" },
+    {
+      "id": "attr-012",
+      "name": "Good Walking Trails",
+      "name_ko": "걷기 좋은 산책로",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-013",
+      "name": "Unusual Election Process",
+      "name_ko": "특이한 선거 절차",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-014",
+      "name": "Used As A Sanctuary",
+      "name_ko": "안식처로 사용되는",
+      "type": "Attribute"
+    },
+    { "id": "attr-015", "name": "Pacificistic", "name_ko": "평화주의적인", "type": "Attribute" },
+    { "id": "attr-016", "name": "Shrouded In Myth", "name_ko": "신화에 싸인", "type": "Attribute" },
+    {
+      "id": "attr-017",
+      "name": "No Written Language",
+      "name_ko": "문자가 없는",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-018",
+      "name": "Known For A Specific Salt",
+      "name_ko": "특정 소금으로 유명한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-019",
+      "name": "Culturally Specific Family Structure",
+      "name_ko": "문화적 특색이 있는 가족 구조",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-020",
+      "name": "Protected Cultural Site",
+      "name_ko": "보호된 문화 유적지",
+      "type": "Attribute"
+    },
+    { "id": "attr-021", "name": "Eccentric Leader", "name_ko": "괴짜 지도자", "type": "Attribute" },
+    {
+      "id": "attr-022",
+      "name": "Habitat Of A Venomous Species",
+      "name_ko": "독이 있는 종의 서식지",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-023",
+      "name": "Dotted With Graves",
+      "name_ko": "무덤이 산재한",
+      "type": "Attribute"
+    },
+    { "id": "attr-024", "name": "Iconic Tower(s)", "name_ko": "상징적인 탑", "type": "Attribute" },
+    {
+      "id": "attr-025",
+      "name": "Income Inequality",
+      "name_ko": "소득 불평등",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-026",
+      "name": "Known For Pond(s)",
+      "name_ko": "연못으로 유명한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-027",
+      "name": "Distinctive Architecture",
+      "name_ko": "독특한 건축물",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-028",
+      "name": "Famous For Confectionery",
+      "name_ko": "제과/디저트로 유명한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-029",
+      "name": "Known For A Precious Herb",
+      "name_ko": "귀한 약초로 유명한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-030",
+      "name": "Popular Holiday Spot",
+      "name_ko": "인기 있는 휴양지",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-031",
+      "name": "Frequently At War",
+      "name_ko": "전쟁이 잦은",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-032",
+      "name": "Located Above A Tunnel System",
+      "name_ko": "터널 시스템 위에 위치한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-033",
+      "name": "Sweltering Hot In Summer",
+      "name_ko": "여름에 무더운",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-034",
+      "name": "Haven For Outcasts And Exiles",
+      "name_ko": "추방자와 망명객들의 안식처",
+      "type": "Attribute"
+    },
+    { "id": "attr-035", "name": "Wealthy", "name_ko": "부유한", "type": "Attribute" },
+    {
+      "id": "attr-036",
+      "name": "Known For Weaving",
+      "name_ko": "직물로 유명한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-037",
+      "name": "Covered In Trees",
+      "name_ko": "나무로 뒤덮인",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-038",
+      "name": "Considered Sacred Ground",
+      "name_ko": "성지로 여겨지는",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-039",
+      "name": "Known For Its Fragrance",
+      "name_ko": "향기로 유명한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-040",
+      "name": "Known For Unusual Pet(s)",
+      "name_ko": "특이한 반려동물로 유명한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-041",
+      "name": "Distinctive Regional Crop",
+      "name_ko": "독특한 지역 작물",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-042",
+      "name": "Famous For Dumplings",
+      "name_ko": "만두로 유명한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-043",
+      "name": "Home Of A Titan Of Industry",
+      "name_ko": "산업 거물의 고향",
+      "type": "Attribute"
+    },
+    { "id": "attr-044", "name": "Strong Winds", "name_ko": "강풍이 부는", "type": "Attribute" },
+    {
+      "id": "attr-045",
+      "name": "Values Creativity",
+      "name_ko": "창의성을 중시하는",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-046",
+      "name": "Known For One Lurid District",
+      "name_ko": "선정적인 구역 하나로 유명한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-047",
+      "name": "Home Of A Religious Order",
+      "name_ko": "종교 단체의 본거지",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-048",
+      "name": "Frequent Changes Of Leadership",
+      "name_ko": "지도층의 교체가 빈번한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-049",
+      "name": "Short Or Long Growing Season",
+      "name_ko": "재배 기간이 짧거나 긴",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-050",
+      "name": "Culturally Specific Tattoo(s)",
+      "name_ko": "문화적 특색이 있는 문신",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-051",
+      "name": "Located On A Hilltop",
+      "name_ko": "언덕 꼭대기에 위치한",
+      "type": "Attribute"
+    },
+    { "id": "attr-052", "name": "Festival Site", "name_ko": "축제 장소", "type": "Attribute" },
+    { "id": "attr-053", "name": "Social Equality", "name_ko": "사회적 평등", "type": "Attribute" },
+    {
+      "id": "attr-054",
+      "name": "Values Self-Determination",
+      "name_ko": "자기 결정권을 중시하는",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-055",
+      "name": "Regionally Specific Bread",
+      "name_ko": "지역 특색이 있는 빵",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-056",
+      "name": "Regionally Specific Sauce",
+      "name_ko": "지역 특색이 있는 소스",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-057",
+      "name": "Famous For Its Unusual Hue Of Soil Or Stone",
+      "name_ko": "토양이나 암석의 특이한 빛깔로 유명한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-058",
+      "name": "Known For A Special Berry",
+      "name_ko": "특별한 베리로 유명한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-059",
+      "name": "Values Mental Health",
+      "name_ko": "정신 건강을 중시하는",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-060",
+      "name": "Ornate Rooftop(s)",
+      "name_ko": "화려한 지붕",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-061",
+      "name": "Known For Orchard(s)",
+      "name_ko": "과수원으로 유명한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-062",
+      "name": "Habitat Of An Endangered Animal",
+      "name_ko": "멸종 위기 동물의 서식지",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-063",
+      "name": "Values Elders",
+      "name_ko": "어르신을 공경하는",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-064",
+      "name": "Regional Accent",
+      "name_ko": "지역 방언/억양",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-065",
+      "name": "Home Of An Eccentric Hermit",
+      "name_ko": "괴짜 은둔자의 거처",
+      "type": "Attribute"
+    },
+    { "id": "attr-066", "name": "Powerful Storms", "name_ko": "강력한 폭풍", "type": "Attribute" },
+    {
+      "id": "attr-067",
+      "name": "Known For Regional Legume",
+      "name_ko": "지역 콩류로 유명한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-068",
+      "name": "Composed Of An Unusual Material",
+      "name_ko": "이례적인 재질로 구성된",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-069",
+      "name": "Rich Or Unusual Soil",
+      "name_ko": "비옥하거나 특이한 토양",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-070",
+      "name": "Known For Bookmaking",
+      "name_ko": "제책업/도서 제작으로 유명한",
+      "type": "Attribute"
+    },
+    { "id": "attr-071", "name": "Ritual Site", "name_ko": "의식/제례 장소", "type": "Attribute" },
+    {
+      "id": "attr-072",
+      "name": "Known For Ruin(s)",
+      "name_ko": "유적으로 유명한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-073",
+      "name": "Known For Pastries",
+      "name_ko": "페이스트리/빵으로 유명한",
+      "type": "Attribute"
+    },
+    { "id": "attr-074", "name": "Values Unity", "name_ko": "결속을 중시하는", "type": "Attribute" },
+    {
+      "id": "attr-075",
+      "name": "Beautiful Grasses",
+      "name_ko": "아름다운 풀밭",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-076",
+      "name": "Distinctive Footwear",
+      "name_ko": "독특한 신발",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-077",
+      "name": "Home Of A Prized Horse Breed",
+      "name_ko": "귀한 품종의 말 사육지",
+      "type": "Attribute"
+    },
+    { "id": "attr-078", "name": "Multicultural", "name_ko": "다문화의", "type": "Attribute" },
+    {
+      "id": "attr-079",
+      "name": "Run By Military",
+      "name_ko": "군사 통치 하의",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-080",
+      "name": "Vegetarian Diet",
+      "name_ko": "채식 위주의 식단",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-081",
+      "name": "Abundant Energy Source",
+      "name_ko": "풍부한 에너지원",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-082",
+      "name": "Regionally Specific Spice",
+      "name_ko": "지역 특색이 있는 향신료",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-083",
+      "name": "Habitat Of An Apex Predator",
+      "name_ko": "최상위 포식자의 서식지",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-084",
+      "name": "Gender Expectations Unfamiliar To Outsiders",
+      "name_ko": "외지인에게 낯선 성 역할 기대치",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-085",
+      "name": "Known For Wildflower(s)",
+      "name_ko": "야생화로 유명한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-086",
+      "name": "Regionally Specific Cheese",
+      "name_ko": "지역 특색이 있는 치즈",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-087",
+      "name": "Known For Fashion Accessories",
+      "name_ko": "패션 소품으로 유명한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-088",
+      "name": "Good Health Care",
+      "name_ko": "우수한 의료 체계",
+      "type": "Attribute"
+    },
+    { "id": "attr-089", "name": "Unusual Moss", "name_ko": "이례적인 이끼", "type": "Attribute" },
+    { "id": "attr-090", "name": "Known For Honey", "name_ko": "꿀로 유명한", "type": "Attribute" },
+    { "id": "attr-091", "name": "Private Estate", "name_ko": "사유지", "type": "Attribute" },
+    {
+      "id": "attr-092",
+      "name": "Known For Places Of Worship",
+      "name_ko": "예배당/성소로 유명한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-093",
+      "name": "Regionally Specific Cat Breed",
+      "name_ko": "지역 특유의 고양이 품종",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-094",
+      "name": "Popular Bloodsport",
+      "name_ko": "인기 있는 격투기/살상 스포츠",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-095",
+      "name": "Restrictive Of Free Speech",
+      "name_ko": "표현의 자유가 제한된",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-096",
+      "name": "Known For Spicy Food",
+      "name_ko": "매운 음식으로 유명한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-097",
+      "name": "Geologically Unstable",
+      "name_ko": "지질학적으로 불안정한",
+      "type": "Attribute"
+    },
+    { "id": "attr-098", "name": "Rolling Hills", "name_ko": "완만한 구릉지", "type": "Attribute" },
+    {
+      "id": "attr-099",
+      "name": "Known For Rare Gourd(s)",
+      "name_ko": "희귀한 박 종류로 유명한",
+      "type": "Attribute"
+    },
+    { "id": "attr-100", "name": "Regional Taboo", "name_ko": "지역적 금기", "type": "Attribute" },
+    {
+      "id": "attr-101",
+      "name": "Stray Animal Colony",
+      "name_ko": "떠돌이 동물 군락",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-102",
+      "name": "Known For Prohibition",
+      "name_ko": "금지령(금주법 등)으로 유명한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-103",
+      "name": "Unique Education System",
+      "name_ko": "독특한 교육 시스템",
+      "type": "Attribute"
+    },
+    { "id": "attr-104", "name": "Barter System", "name_ko": "물물교환 체계", "type": "Attribute" },
+    {
+      "id": "attr-105",
+      "name": "Source Of A Rare Fruit",
+      "name_ko": "희귀 과일의 산지",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-106",
+      "name": "Freezing Cold In Winter",
+      "name_ko": "겨울에 몹시 추운",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-107",
+      "name": "Site Of Nature Worship",
+      "name_ko": "자연 숭배의 장소",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-108",
+      "name": "Strict Silence Expected At All Times",
+      "name_ko": "언제나 엄격한 정숙이 요구되는",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-109",
+      "name": "Used As A Border Marker",
+      "name_ko": "경계 표지로 사용되는",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-110",
+      "name": "Skilled Sculptor(s)",
+      "name_ko": "숙련된 조각가들",
+      "type": "Attribute"
+    },
+    { "id": "attr-111", "name": "High Crime Rate", "name_ko": "높은 범죄율", "type": "Attribute" },
+    {
+      "id": "attr-112",
+      "name": "Complex Legal System",
+      "name_ko": "복잡한 법률 체계",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-113",
+      "name": "Located Above Cave(s)",
+      "name_ko": "동굴 위에 위치한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-114",
+      "name": "Distinctive Carvings",
+      "name_ko": "독특한 조각/각인",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-115",
+      "name": "Headquarters Of A Crime Family",
+      "name_ko": "범죄 조직의 본거지",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-116",
+      "name": "Known For A Delicious Reptile Dish",
+      "name_ko": "맛있는 파충류 요리로 유명한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-117",
+      "name": "Known For Cacti",
+      "name_ko": "선인장으로 유명한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-118",
+      "name": "Regionally Specific Beverage",
+      "name_ko": "지역 특색이 있는 음료",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-119",
+      "name": "Famous For Archive(s)",
+      "name_ko": "기록 보관소로 유명한",
+      "type": "Attribute"
+    },
+    { "id": "attr-120", "name": "Neutrality", "name_ko": "중립성", "type": "Attribute" },
+    {
+      "id": "attr-121",
+      "name": "Rich In Folklore",
+      "name_ko": "민속 설화가 풍부한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-122",
+      "name": "Beautiful Winters Or Summers",
+      "name_ko": "아름다운 겨울 혹은 여름",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-123",
+      "name": "Known For Mushroom(s)",
+      "name_ko": "버섯으로 유명한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-124",
+      "name": "Bustling Market(s)",
+      "name_ko": "북적이는 시장",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-125",
+      "name": "Known For Tea",
+      "name_ko": "차(Tea)로 유명한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-126",
+      "name": "Known For Revelry",
+      "name_ko": "왁자지껄한 잔치로 유명한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-127",
+      "name": "Famous For Cosmetics",
+      "name_ko": "화장품으로 유명한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-128",
+      "name": "Unique System Of Timekeeping",
+      "name_ko": "독특한 시간 측정 방식",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-129",
+      "name": "Site Of A Famous Scientific Discovery",
+      "name_ko": "유명한 과학적 발견의 장소",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-130",
+      "name": "Site Of An Infamous Heist",
+      "name_ko": "악명 높은 강도 사건의 현장",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-131",
+      "name": "Birthplace Of A World Religion",
+      "name_ko": "세계 종교의 발상지",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-132",
+      "name": "Created By The Meeting Of Two Cultures",
+      "name_ko": "두 문화의 만남으로 만들어진",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-133",
+      "name": "Abandoned When Mineral Deposit(s) Ran Out",
+      "name_ko": "광물이 고갈되어 버려졌던",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-134",
+      "name": "Last Known Location Of An Ancient Artifact",
+      "name_ko": "고대 유물의 마지막 발견 장소",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-135",
+      "name": "Site Of A Notorious Bet",
+      "name_ko": "악명 높은 내기가 벌어졌던 곳",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-136",
+      "name": "Origin Of A Famous Art Style",
+      "name_ko": "유명한 예술 양식의 기원",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-137",
+      "name": "Site Of A Famous Negotiation",
+      "name_ko": "유명한 협상의 장소",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-138",
+      "name": "Homeland Of A Displaced People",
+      "name_ko": "추방된 민족의 고향",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-139",
+      "name": "Site Of A Famous Execution",
+      "name_ko": "유명한 처형 장소",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-140",
+      "name": "Founded As Gang Headquarters",
+      "name_ko": "갱단의 본부로 시작된",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-141",
+      "name": "Originally A Temporary Settlement",
+      "name_ko": "원래는 임시 정착지였던",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-142",
+      "name": "Built On Stolen Land",
+      "name_ko": "훔친 땅 위에 세워진",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-143",
+      "name": "Cited As A Social Experiment",
+      "name_ko": "사회적 실험으로 언급되는",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-144",
+      "name": "Linked To Lore About The Afterlife",
+      "name_ko": "사후 세계에 대한 설화와 연결된",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-145",
+      "name": "Site Of An Auditory Phenomenon",
+      "name_ko": "청각적 현상이 발생하는 곳",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-146",
+      "name": "Habitat Of A Rare Insect",
+      "name_ko": "희귀 곤충의 서식지",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-147",
+      "name": "Skilled Foragers",
+      "name_ko": "숙련된 채집가들",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-148",
+      "name": "Elaborate Etiquette System",
+      "name_ko": "정교한 예법 체계",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-149",
+      "name": "Constantly Cloudy",
+      "name_ko": "항상 구름이 끼는",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-150",
+      "name": "Pilgrimage Destination",
+      "name_ko": "성지 순례지",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-151",
+      "name": "Theocratic Government",
+      "name_ko": "신권 정치 체제",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-152",
+      "name": "Haven For Artists",
+      "name_ko": "예술가들의 안식처",
+      "type": "Attribute"
+    },
+    { "id": "attr-153", "name": "Hunting Ground", "name_ko": "사냥터", "type": "Attribute" },
+    {
+      "id": "attr-154",
+      "name": "Known For Fossil(s)",
+      "name_ko": "화석으로 유명한",
+      "type": "Attribute"
+    },
+    { "id": "attr-155", "name": "Polluted", "name_ko": "오염된", "type": "Attribute" },
+    {
+      "id": "attr-156",
+      "name": "Good Walking Trails",
+      "name_ko": "걷기 좋은 산책로",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-157",
+      "name": "Unusual Election Process",
+      "name_ko": "특이한 선거 절차",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-158",
+      "name": "Used As A Sanctuary",
+      "name_ko": "안식처로 사용되는",
+      "type": "Attribute"
+    },
+    { "id": "attr-159", "name": "Shrouded In Myth", "name_ko": "신화에 싸인", "type": "Attribute" },
+    {
+      "id": "attr-160",
+      "name": "No Written Language",
+      "name_ko": "문자가 없는",
+      "type": "Attribute"
+    },
+    { "id": "attr-161", "name": "Eccentric Leader", "name_ko": "괴짜 지도자", "type": "Attribute" },
+    {
+      "id": "attr-162",
+      "name": "Habitat Of A Venomous Species",
+      "name_ko": "독이 있는 종의 서식지",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-163",
+      "name": "Dotted With Graves",
+      "name_ko": "무덤이 산재한",
+      "type": "Attribute"
+    },
+    { "id": "attr-164", "name": "Pacificistic", "name_ko": "평화주의적인", "type": "Attribute" },
+    {
+      "id": "attr-165",
+      "name": "Income Inequality",
+      "name_ko": "소득 불평등",
+      "type": "Attribute"
+    },
+    { "id": "attr-166", "name": "Iconic Tower(s)", "name_ko": "상징적인 탑", "type": "Attribute" },
+    {
+      "id": "attr-167",
+      "name": "Popular Holiday Spot",
+      "name_ko": "인기 있는 휴양지",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-168",
+      "name": "Located Above A Tunnel System",
+      "name_ko": "터널 시스템 위에 위치한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-169",
+      "name": "Aggressive Wildlife",
+      "name_ko": "공격적인 야생 동물",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-170",
+      "name": "Volcanically Active",
+      "name_ko": "화산 활동이 활발한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-171",
+      "name": "Known For Music",
+      "name_ko": "음악으로 유명한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-172",
+      "name": "Spiritual Retreat",
+      "name_ko": "영적 수행지",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-173",
+      "name": "Absent Leader",
+      "name_ko": "부재 중인 지도자",
+      "type": "Attribute"
+    },
+    { "id": "attr-174", "name": "Numerous Gangs", "name_ko": "수많은 갱단", "type": "Attribute" },
+    {
+      "id": "attr-175",
+      "name": "Expansionist Agenda",
+      "name_ko": "팽창주의적 의제",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-176",
+      "name": "Regional Holiday Celebration",
+      "name_ko": "지역 축제 기념 행사",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-177",
+      "name": "Located On A Waterway",
+      "name_ko": "수로(물길)에 위치한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-178",
+      "name": "Known For Talking Bird(s)",
+      "name_ko": "말하는 새로 유명한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-179",
+      "name": "Visited For Good Luck",
+      "name_ko": "행운을 빌기 위해 방문하는",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-180",
+      "name": "Habitat Of A Giant Animal",
+      "name_ko": "거대 동물의 서식지",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-181",
+      "name": "Popular Campsite",
+      "name_ko": "인기 있는 캠핑장",
+      "type": "Attribute"
+    },
+    { "id": "attr-182", "name": "Multilingual", "name_ko": "다언어 사용", "type": "Attribute" },
+    { "id": "attr-183", "name": "Gambling Hub", "name_ko": "도박의 중심지", "type": "Attribute" },
+    {
+      "id": "attr-184",
+      "name": "Everyone Hates The Weather",
+      "name_ko": "모두가 날씨를 싫어하는",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-185",
+      "name": "Wildlife Mating Grounds",
+      "name_ko": "야생 동물의 번식지",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-186",
+      "name": "Oldest Of Its Kind",
+      "name_ko": "같은 종류 중 가장 오래된",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-187",
+      "name": "Seasonal Flooding",
+      "name_ko": "계절적 침수/범람",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-188",
+      "name": "Known For Street Food",
+      "name_ko": "길거리 음식으로 유명한",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-189",
+      "name": "Oral History Tradition",
+      "name_ko": "구전 역사 전통",
+      "type": "Attribute"
+    },
+    {
+      "id": "attr-190",
+      "name": "Known For One Specific Superstition",
+      "name_ko": "특정한 미신으로 유명한",
+      "type": "Attribute"
+    },
+    { "id": "attr-191", "name": "Carnivorous Plants", "name_ko": "식충 식물", "type": "Attribute" },
+    {
+      "id": "attr-192",
+      "name": "Religiously Diverse",
+      "name_ko": "종교적으로 다양한",
+      "type": "Attribute"
+    }
+  ],
+  "advent": [
+    {
+      "id": "adve-1",
+      "name": "WILDLIFE IS BEHAVING PECULIARLY: AGGRESSION, DISORIENTATION, OR HYPERACTIVITY",
+      "name_ko": "야생 동물이 이상하게 행동함: 공격성, 방향 감각 상실 또는 과잉 행동",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-2",
+      "name": "THERE IS A RUSH TO DISCOVER A MYTHICAL BURIAL SITE: FOR RELIGIOUS REASONS, GRAVE ROBBING, OR BRAGGING RIGHTS",
+      "name_ko": "신화 속 매장지를 찾으려는 열풍이 불고 있음: 종교적 이유, 도굴 또는 과시용",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-3",
+      "name": "THEY ARE UNDER SIEGE BY A FOREIGN POWER: AN ARMY, BOMBARDMENT, OR PROPAGANDA WAR",
+      "name_ko": "외세의 포위 공격을 받고 있음: 군대, 포격 또는 선전전",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-4",
+      "name": "A REVOLUTIONARY MANIFESTO IS CAUSING AN UPROAR: HIGHLIGHTING INJUSTICE, STOKING DIVISION, OR REVEALING POLITICAL SECRETS",
+      "name_ko": "혁명 선언문이 소동을 일으키고 있음: 불평등 강조, 분열 조장 또는 정치적 비밀 폭로",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-5",
+      "name": "REFUGEES ARE SETTING UP CAMP DESPITE CHALLENGES: RESOURCE SHORTAGES, DANGEROUS TERRAIN, OR HOSTILE LOCALS",
+      "name_ko": "자원 부족, 위험한 지형 또는 현지인의 적대감에도 불구하고 난민들이 캠프를 설치하고 있음",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-6",
+      "name": "RECENT CONSTRUCTION HAS UNEARTHED A SECRET: A BODY, VAULT, OR TUNNEL",
+      "name_ko": "최근의 건설 작업 중 비밀이 드러남: 시신, 금고 또는 터널",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-7",
+      "name": "A LAND DISPUTE IS UNDERWAY: DISPUTED SALE, ANCESTRY, OR GEOGRAPHY",
+      "name_ko": "토지 분쟁이 진행 중임: 논란이 되는 매각, 가문 내력 또는 지리적 요인",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-8",
+      "name": "LOCALS ARE FALLING ILL WITH THE SAME STRANGE SYMPTOMS: SLEEPING SICKNESS, ODD GROWTHS, OR ERRATIC MOODS",
+      "name_ko": "현지인들이 동일한 이상 증세로 병에 걸리고 있음: 수면병, 이상 증식 또는 변덕스러운 기분",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-9",
+      "name": "AN INVASIVE SPECIES IS TAKING OVER THE ECOSYSTEM: A PLANT, PEST, OR SCAVENGER",
+      "name_ko": "외래종이 생태계를 장악하고 있음: 식물, 해충 또는 청소 동물",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-10",
+      "name": "THEY ARE DECLARING INDEPENDENCE FROM THEIR FORMER RULERS: A NATION, MONARCH, OR COMPANY",
+      "name_ko": "이전 통치자(국가, 군주 또는 기업)로부터 독립을 선언하고 있음",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-11",
+      "name": "EARTHQUAKES ARE UNCOVERING SOMETHING LONG BURIED: A HIVE, SINKHOLE, OR TOMB",
+      "name_ko": "지진으로 인해 오랫동안 묻혀 있던 것이 드러나고 있음: 군집, 싱크홀 또는 무덤",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-12",
+      "name": "A LEADER'S SUDDEN DEATH IS CREATING A POWER VACUUM: TO BE FILLED BY HEIRS, COUNCIL MEMBERS, OR A VOTE",
+      "name_ko": "지도자의 갑작스러운 죽음으로 권력 공백이 발생함: 후계자, 의회 의원 또는 투표로 채워질 예정",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-13",
+      "name": "THE SIGHTING OF A RARE CREATURE IS MAKING HEADLINES: IT IS BELIEVED TO BE MAGICAL, MYTHICAL, OR EXTINCT",
+      "name_ko": "희귀 생명체의 목격담이 헤드라인을 장식함: 마법적이거나 신화 속의 존재, 혹은 멸종된 것으로 여겨짐",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-14",
+      "name": "THE DOMINANT CULTURAL GROUP IS REWRITING HISTORY: TO COVER UP A RECENT SCANDAL, PAST WRONG, OR ONGOING INJUSTICE",
+      "name_ko": "지배적인 문화 집단이 역사를 왜곡하고 있음: 최근의 스캔들, 과거의 잘못 또는 진행 중인 불의를 덮기 위함",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-15",
+      "name": "A SECRET SOCIETY IS SAID TO BE GATHERING: FOR AN ELECTION, EMERGENCY MEETING, OR GRAND RITUAL",
+      "name_ko": "비밀 결사가 모이고 있다는 소문이 있음: 선거, 비상 회의 또는 거대 의식을 위함",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-16",
+      "name": "FAMINE HAS STRUCK AND IS GETTING WORSE: DUE TO PRICE GOUGING, PANIC BUYING, OR FOOD RIOTS",
+      "name_ko": "기근이 닥쳐 악화되고 있음: 가격 폭리, 사재기 또는 식량 폭동으로 인함",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-17",
+      "name": "TOURISM IS DAMAGING THE ECOSYSTEM: LOCALS ARE PROTESTING, PROFITING, OR DIVIDED",
+      "name_ko": "관광업이 생태계를 훼손하고 있음: 현지인들이 항의하거나, 수익을 얻거나, 의견이 갈림",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-18",
+      "name": "UNKNOWN SOLDIERS ARE SETTING UP A STRONGHOLD: SUSPECTED TO BE A FOREIGN ARMY, REBEL GROUP, OR BANDIT CAMP",
+      "name_ko": "정체불명의 군인들이 요새를 구축 중임: 외군, 반군 또는 산적 캠프로 의심됨",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-19",
+      "name": "THE DEATH OF A CULTURAL ICON IS TROUBLING THE POPULATION: WITH COLLECTIVE GRIEF, LOSS OF LEADERSHIP, OR SUSPECTED FOUL PLAY",
+      "name_ko": "문화적 아이콘의 죽음으로 민심이 동요함: 집단적 슬픔, 지도력 상실 또는 타살 의혹",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-20",
+      "name": "A DIVISIVE ELECTION IS UNDERWAY: THE VOTE IS SPLIT DUE TO A POLITICAL SCANDAL, JOKE CANDIDATE, OR IDEOLOGICAL OPPOSITION",
+      "name_ko": "분열적인 선거가 진행 중임: 정치적 스캔들, 장난삼아 나온 후보 또는 이념 대립으로 표가 갈림",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-21",
+      "name": "DISCOVERY OF A NEW RESOURCE IS CAUSING A PROSPECTING RUSH: A MINERAL, FUEL, OR LIVING THING",
+      "name_ko": "새로운 자원의 발견으로 탐사 열풍이 불고 있음: 광물, 연료 또는 생물 자원",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-22",
+      "name": "A RARE CELESTIAL PHENOMENON IS ABOUT TO BE VISIBLE: AN ECLIPSE, METEOR SHOWER, OR EXPLODING STAR",
+      "name_ko": "희귀한 천문 현상이 곧 관측될 예정임: 일식/월식, 유성우 또는 별의 폭발",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-23",
+      "name": "AN OPPRESSED GROUP IS FIGHTING FOR THEIR RIGHTS: POLITICAL REPRESENTATION, ECONOMIC OPPORTUNITY, OR CULTURAL EXPRESSION",
+      "name_ko": "억압받던 집단이 권리를 위해 싸우고 있음: 정치적 대변, 경제적 기회 또는 문화적 표현",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-24",
+      "name": "UNEMPLOYMENT IS AT AN ALL-TIME HIGH: TRIGGERING SOCIAL UNREST, ECONOMIC RECESSION, OR EMIGRATION OF WORKERS",
+      "name_ko": "실업률이 사상 최고치를 기록함: 사회적 불안, 경기 침체 또는 노동자 이탈 유발",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-25",
+      "name": "A WORLD RECORD IS ABOUT TO BE BROKEN: LARGEST PLANT/ANIMAL, EXTREME TEMPERATURE, OR ATHLETIC FEAT",
+      "name_ko": "세계 기록이 깨지기 직전임: 최대 크기의 식물/동물, 극한 기온 또는 운동 경기 기록",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-26",
+      "name": "A STRANGE CLOUD FORMATION IS GROWING: SUPPOSEDLY CAUSED BY WILDLIFE, POLLEN, OR SOMETHING SUPERNATURAL",
+      "name_ko": "이상한 구름 형상들이 커지고 있음: 야생 동물, 꽃가루 또는 초자연적인 현상에 의한 것으로 추정됨",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-27",
+      "name": "A SCIENTIFIC BREAKTHROUGH IS CAUSING CONTROVERSY: IT IS SEEN AS IMMORAL, RECKLESS, OR BREAKING TRADITION",
+      "name_ko": "과학적 비약이 논란을 일으키고 있음: 비도덕적, 무모함 또는 전통 파괴로 간주됨",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-28",
+      "name": "MARTIAL LAW HAS BEEN DECLARED: TO IMPOSE A CURFEW, A SUSPENSION OF RIGHTS, OR A MANDATORY CONSCRIPTION",
+      "name_ko": "계엄령이 선포됨: 통행금지, 권리 정지 또는 강제 징집을 시행하기 위함",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-29",
+      "name": "A POPULIST LEADER IS GAINING POWER THROUGH DANGEROUS RHETORIC: RESULTING IN CIVIL CONFLICT, FEAR OF OUTSIDERS, OR INDOCTRINATION",
+      "name_ko": "포퓰리스트 지도자가 위험한 수사로 권력을 잡고 있음: 시민 갈등, 외지인에 대한 공포 또는 세뇌를 유발함",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-30",
+      "name": "A PROMINENT FIGURE IS BEING EXPOSED AS A FRAUD: A FOUNDER, CULTURAL ICON, OR RELIGIOUS LEADER",
+      "name_ko": "유명 인사의 사기 행각이 폭로되고 있음: 설립자, 문화적 아이콘 또는 종교 지도자",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-31",
+      "name": "MYSTERIOUS SOUNDS ARE BEING HEARD AT NIGHT: SCREAMING, DIGGING, OR SINGING",
+      "name_ko": "밤마다 의문의 소리가 들리고 있음: 비명, 땅 파는 소리 또는 노랫소리",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-32",
+      "name": "A SUDDEN DROUGHT COULD HAVE DISASTROUS CONSEQUENCES: DEFORESTATION, SPECIES EXTINCTION, OR FAMINE",
+      "name_ko": "갑작스러운 가뭄이 재앙적인 결과를 초래할 수 있음: 삼림 파괴, 종의 멸종 또는 기근",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-33",
+      "name": "THE FATE OF A POLITICAL PRISONER IS DIVIDING THE POPULATION: A FOREIGN AMBASSADOR, POLITICAL DISSIDENT, OR FORMER LEADER",
+      "name_ko": "정치범의 운명을 두고 여론이 분열됨: 외국 대사, 정치적 반체제 인사 또는 전직 지도자",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-34",
+      "name": "MASS EVICTIONS ARE UNDERWAY: OF A SOCIAL CLASS, COMMUNITY, OR POLITICAL AFFILIATION",
+      "name_ko": "대규모 퇴거 조치가 진행 중임: 특정 사회 계층, 공동체 또는 정치적 소속 집단 대상",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-35",
+      "name": "A NEW COMMUNE IS SETTING UP WITHOUT PERMISSION: THEIR MANDATE IS RELIGIOUS, POLITICAL, OR ARTISTIC",
+      "name_ko": "허가 없이 새로운 공동체가 세워지고 있음: 그들의 목적은 종교적, 정치적 또는 예술적임",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-36",
+      "name": "THE LAND IS RAPIDLY FLOODING: AFFECTING CROPS, HOUSING, OR WILDLIFE",
+      "name_ko": "토지가 빠르게 침수되고 있음: 농작물, 주거지 또는 야생 동물에 영향을 미침",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-37",
+      "name": "A WORKERS' STRIKE IS SHUTTING DOWN THE AREA: DUE TO A RECENT INCIDENT, LONGSTANDING CONDITIONS, OR CHARISMATIC LEADER",
+      "name_ko": "노동자 파업으로 해당 지역이 폐쇄됨: 최근의 사건, 오래된 열악한 환경 또는 카리스마 있는 지도자로 인함",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-38",
+      "name": "PEOPLE ARE OPENLY RIOTING AGAINST AN INJUSTICE: SOCIAL INEQUALITY, A TYRANNICAL RULER, OR AN UNJUST LAW",
+      "name_ko": "사람들이 불의에 맞서 공개적으로 폭동을 일으키고 있음: 사회적 불평등, 독재자 또는 부당한 법령",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-39",
+      "name": "AN UNKNOWN DISEASE IS DECIMATING THE ECOSYSTEM: A PLANT BLIGHT, BRAIN PARASITE, OR FUNGAL SPORE",
+      "name_ko": "알 수 없는 질병이 생태계를 파괴하고 있음: 식물 마름병, 뇌 기생충 또는 곰팡이 포자",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-40",
+      "name": "THE SHOWDOWN OF THE CENTURY IS ABOUT TO TAKE PLACE BETWEEN RIVALS: A DUEL, BET, OR SPORTS MATCH",
+      "name_ko": "라이벌 간의 세기적인 대결이 펼쳐지려 함: 결투, 내기 또는 스포츠 경기",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-41",
+      "name": "A LARGE SEASONAL MIGRATION HAS TAKEN AN UNEXPECTED TURN: ANIMALS ARE STAMPEDING, DIVERTING THEIR ROUTE, OR STAYING AND FEEDING",
+      "name_ko": "대규모 계절적 이동이 예상치 못한 방향으로 흐름: 동물들이 갑자기 몰려들거나, 경로를 바꾸거나, 머물며 먹이 활동을 함",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-42",
+      "name": "CONTAMINATION HAS JUST BEEN DISCOVERED IN THE WATER: SOMETHING ALIVE, DEAD, OR CHEMICAL",
+      "name_ko": "물속에서 오염 물질이 방금 발견됨: 살아있는 것, 죽은 것 또는 화학 물질",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-43",
+      "name": "PEOPLE ARE DEMANDING REPARATIONS FROM A FORMER COLONIAL POWER: FINANCIAL COMPENSATION, LAND RIGHTS, OR A FORMAL APOLOGY",
+      "name_ko": "사람들이 이전 식민 지배국에 배상을 요구하고 있음: 금전적 보상, 토지 권리 또는 공식 사과",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-44",
+      "name": "A PROPHET IS CLAIMING TO SPEAK FOR A NEW GOD: THE GOD DEMANDS WORSHIP, TRIBUTE, OR CHANGES IN LIFESTYLE",
+      "name_ko": "예언자가 새로운 신의 대변인임을 주장함: 그 신은 예배, 공물 또는 생활 방식의 변화를 요구함",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-45",
+      "name": "THE CLIMATE IS CHANGING RAPIDLY AND DESTRUCTIVELY: HEATING UP, COOLING DOWN, OR CHANGING WEATHER PATTERNS",
+      "name_ko": "기후가 급격하고 파괴적으로 변화하고 있음: 기온 상승, 하강 또는 기상 패턴의 변화",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-46",
+      "name": "THE LAST KNOWLEDGE KEEPER OF AN ANCIENT TRADITION IS DYING: AN ARTISAN, STORYTELLER, OR LANGUAGE SPEAKER",
+      "name_ko": "고대 전통의 마지막 지식 전수자가 죽어가고 있음: 장인, 스토리텔러 또는 해당 언어 구사자",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-47",
+      "name": "A LOCAL HERO IS TURNING OUT NOT TO BE WHO THEY CLAIMED: THEY EXAGGERATED THEIR DEEDS, HAVE AN OBJECTIONABLE PRIVATE LIFE, OR ARE AN IMPOSTOR",
+      "name_ko": "지역 영웅이 주장했던 인물이 아님이 드러남: 업적을 과장했거나, 부적절한 사생활이 있거나, 가짜임이 밝혀짐",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-48",
+      "name": "PEOPLE ARE DEBATING DESTROYING A HISTORIC SYMBOL OF OPPRESSION: A STATUE, BUILDING, OR ANTIQUATED LAW",
+      "name_ko": "사람들이 역사적인 억압의 상징을 파괴할지 논쟁 중임: 동상, 건물 또는 구시대적인 법률",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-49",
+      "name": "AN IMPORTANT SPECIES IS ON THE BRINK OF EXTINCTION: IT IS CULTURALLY SACRED, HUNTED BY POACHERS, OR LOSING ITS HABITAT",
+      "name_ko": "중요한 종이 멸종 위기에 처함: 문화적으로 신성시되거나, 밀렵꾼의 표적이 되거나, 서식지를 잃고 있음",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-50",
+      "name": "A RESPECTED THINKER JUST MADE A STARTLING PREDICTION: ABOUT THE ECONOMY, CLIMATE, OR SUPERNATURAL WORLD",
+      "name_ko": "존경받는 사상가가 놀라운 예측을 내놓음: 경제, 기후 또는 초자연적 세계에 관한 것",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-51",
+      "name": "A HUGE CONSTRUCTION PROJECT IS ON THE VERGE OF COLLAPSE: MATERIAL SHORTAGES, PULLED FUNDING, OR WORKPLACE HAZARD",
+      "name_ko": "거대 건설 프로젝트가 붕괴 위기에 처함: 자재 부족, 자금 회수 또는 작업장 위험 요소",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-52",
+      "name": "AN ICONIC CULTURAL OBJECT HAS GONE MISSING: A HISTORICAL DOCUMENT, ARTISTIC MASTERPIECE, OR APPROPRIATED ARTIFACT",
+      "name_ko": "상징적인 문화적 물건이 사라짐: 역사적 문서, 예술적 걸작 또는 강탈된 유물",
+      "type": "Advent"
+    },
+
+    {
+      "id": "adve-53",
+      "name": "AN APEX PREDATOR'S HUNTING RANGE IS SHIFTING IN SIGNIFICANT WAYS: MOVING CLOSER TO WATER, LIVESTOCK, OR PEOPLE",
+      "name_ko": "최상위 포식자의 사냥 범위가 크게 변하고 있음: 물가, 가축 또는 사람들과 가까운 곳으로 이동 중임",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-54",
+      "name": "THE ENTIRE SEASON'S HARVEST COULD BE WIPED OUT: BY PESTS, WEATHER, OR SABOTAGE",
+      "name_ko": "이번 시즌의 수확물 전체가 전멸할 위기에 처함: 해충, 날씨 또는 파괴 공작으로 인함",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-55",
+      "name": "A CONTROVERSIAL LAW IS BEING HOTLY DEBATED: IT IS DISCRIMINATORY, SHORTSIGHTED, OR DRIVEN BY PRIVATE INTERESTS",
+      "name_ko": "논란이 많은 법안이 뜨겁게 토론되고 있음: 차별적이거나, 근시안적이거나, 사적 이익에 의해 추진됨",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-56",
+      "name": "THE SEWERS ARE OVERFLOWING: WITH WASTE, PEOPLE, OR DETRITIVORES",
+      "name_ko": "하수구가 넘쳐나고 있음: 폐기물, 사람들 또는 유기물을 먹는 생물들로 가득 참",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-57",
+      "name": "A HIGH-STAKES RACE IS ABOUT TO TAKE PLACE: ON FOOT, ON MOUNTS, OR ON WATER",
+      "name_ko": "큰 상금이 걸린 경주가 곧 열릴 예정임: 도보, 탈것 또는 물 위에서 진행됨",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-58",
+      "name": "THE OMENS OF AN ANCIENT PROPHECY ARE COMING TRUE: CELESTIAL SIGNS, ANIMALS ACTING STRANGELY, OR CLIMATE CHANGES",
+      "name_ko": "고대 예언의 징조들이 실현되고 있음: 천문학적 신호, 동물들의 이상 행동 또는 기후 변화",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-59",
+      "name": "A POWERFUL GROUP IS SPLITTING INTO TWO HOSTILE FACTIONS: THE SCHISM IS RELIGIOUS, POLITICAL, OR CULTURAL",
+      "name_ko": "강력한 집단이 두 개의 적대적인 분파로 갈라지고 있음: 종교적, 정치적 또는 문화적 분열임",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-60",
+      "name": "AN ARTIST IS ABOUT TO REVEAL A CONTROVERSIAL MASTERPIECE: IT BREAKS A TABOO, HIGHLIGHTS AN ISSUE, OR CONDEMNS THE GOVERNMENT",
+      "name_ko": "예술가가 논란의 여지가 있는 걸작을 공개하려 함: 금기를 깨거나, 문제를 부각하거나, 정부를 비판하는 내용임",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-61",
+      "name": "A HUGE FESTIVAL IS ABOUT TO TAKE OVER THE AREA: A CONCERT, ART SHOW, OR CULTURAL CELEBRATION",
+      "name_ko": "거대한 축제가 이 지역을 점령하려 함: 콘서트, 미술 전시회 또는 문화적 기념 행사",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-62",
+      "name": "STARS ARE DISAPPEARING FROM THE NIGHT SKY: DUE TO POLLUTION, AN OPTICAL ILLUSION, OR SOMETHING SUPERNATURAL",
+      "name_ko": "밤하늘에서 별들이 사라지고 있음: 오염, 착시 현상 또는 초자연적인 무언가로 인함",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-63",
+      "name": "AN IMPORTANT CULTURAL EXPRESSION IS BEING BANNED: A LANGUAGE, FORM OF WORSHIP, OR SPORT",
+      "name_ko": "중요한 문화적 표현이 금지되고 있음: 언어, 예배 형식 또는 스포츠",
+      "type": "Advent"
+    },
+    {
+      "id": "adve-64",
+      "name": "THE CONTENTS OF AN IMPORTANT ARCHIVE ARE BEING HELD HOSTAGE: A LIBRARY, MUSEUM, OR ART GALLERY",
+      "name_ko": "중요한 기록물의 내용이 인질로 잡혀 있음: 도서관, 박물관 또는 미술관의 소장품",
+      "type": "Advent"
+    }
+  ]
+}

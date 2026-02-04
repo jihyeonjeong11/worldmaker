@@ -1,7 +1,7 @@
 {
   "name": "worldmaker",
   "version": "0.0.1",
-  "description": "Fantash worldbuilding app",
+  "description": "Fantasy worldbuilding app",
   "private": true,
   "workspaces": [
     "apps/*",
@@ -25,9 +25,15 @@
   "author": "JIHYEON JEONG",
   "license": "ISC",
   "devDependencies": {
+    "fs": "^0.0.1-security",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
+    "path": "^0.12.7",
+    "pdf-parse": "^2.4.5",
     "prettier": "^3.8.1",
     "vitest": "^4.0.18"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.2"
   }
 }
