@@ -12,6 +12,7 @@
   },
   "scripts": {
     "test": "vitest run",
+    "dev": "concurrently \"npm run dev  --workspace=apps/server\" \"npm run dev --workspace=apps/ui\"",
     "prepare": "husky"
   },
   "keywords": [
@@ -25,6 +26,7 @@
   "author": "JIHYEON JEONG",
   "license": "ISC",
   "devDependencies": {
+    "concurrently": "^9.2.1",
     "fs": "^0.0.1-security",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",

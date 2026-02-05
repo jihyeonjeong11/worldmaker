@@ -4,7 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "tsx watch src/index.ts"
+    "dev": "tsx watch src/index.ts",
+    "dev:server": "tsx watch src/index.ts"
   },
   "engines": {
     "node": ">=22.0.0 <23.0.0"
