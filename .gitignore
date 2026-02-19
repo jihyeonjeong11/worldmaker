@@ -31,4 +31,4 @@ yarn.lock
 
 # Agentic tool
 
-./automaker
+./automaker/**
