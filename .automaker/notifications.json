@@ -33,6 +33,17 @@
       "dismissed": false,
       "featureId": "feature-1771503185755-zerp4h4oq",
       "projectPath": "c:\\automaker\\backup\\worldmaker"
+    },
+    {
+      "id": "4a7ea474-10d5-41ca-b3f9-d7d9ed60c7e7",
+      "type": "feature_waiting_approval",
+      "title": "Feature Ready for Review",
+      "message": "\"feature-1771505151274-tju2jbkw5\" is ready for your review and approval.",
+      "createdAt": "2026-02-19T12:53:20.899Z",
+      "read": false,
+      "dismissed": false,
+      "featureId": "feature-1771505151274-tju2jbkw5",
+      "projectPath": "c:\\automaker\\backup\\worldmaker"
     }
   ]
 }

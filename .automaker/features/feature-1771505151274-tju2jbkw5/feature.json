@@ -1,0 +1,31 @@
+{
+  "category": "Uncategorized",
+  "description": "add vitest test for infinitecanvas component and hook",
+  "title": "Add Vitest tests for InfiniteCanvas component",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": true,
+  "model": "claude-opus",
+  "thinkingLevel": "none",
+  "reasoningEffort": "none",
+  "branchName": "scaffolding",
+  "priority": 2,
+  "planningMode": "skip",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "waiting_approval",
+  "id": "feature-1771505151274-tju2jbkw5",
+  "descriptionHistory": [
+    {
+      "description": "add vitest test for infinitecanvas component and hook",
+      "timestamp": "2026-02-19T12:45:51.400Z",
+      "source": "initial"
+    }
+  ],
+  "startedAt": "2026-02-19T12:45:59.411Z",
+  "updatedAt": "2026-02-19T12:53:20.894Z",
+  "justFinishedAt": "2026-02-19T12:53:20.894Z"
+}

@@ -16,7 +16,7 @@
   "dependencies": [],
   "workMode": "custom",
   "titleGenerating": false,
-  "status": "backlog",
+  "status": "in_progress",
   "id": "feature-1771503185755-zerp4h4oq",
   "descriptionHistory": [
     {
@@ -29,5 +29,6 @@
       "timestamp": "2026-02-19T12:13:56.312Z",
       "source": "edit"
     }
-  ]
+  ],
+  "startedAt": "2026-02-19T12:14:01.243Z"
 }

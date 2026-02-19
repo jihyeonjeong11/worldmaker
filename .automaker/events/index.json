@@ -2,6 +2,19 @@
   "version": 1,
   "events": [
     {
+      "id": "evt-1771505600923-387180cc",
+      "trigger": "feature_success",
+      "timestamp": "2026-02-19T12:53:20.923Z",
+      "featureName": "Add Vitest tests for InfiniteCanvas component",
+      "featureId": "feature-1771505151274-tju2jbkw5"
+    },
+    {
+      "id": "evt-1771505151413-7594de43",
+      "trigger": "feature_created",
+      "timestamp": "2026-02-19T12:45:51.413Z",
+      "featureId": "feature-1771505151274-tju2jbkw5"
+    },
+    {
       "id": "evt-1771503751961-7b311e2f",
       "trigger": "feature_success",
       "timestamp": "2026-02-19T12:22:31.961Z",
