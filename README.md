@@ -10,5 +10,8 @@ npm workspaces monorepo를 활용합니다
 
 https://automaker.app/
 https://stoptheslop.dev/blog/stop-the-slop-an-internal-guide-for-devs
+참조해서 개발 진행중
 
 참조
+
+\_root.tsx 확인

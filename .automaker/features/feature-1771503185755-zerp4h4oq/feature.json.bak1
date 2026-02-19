@@ -1,0 +1,35 @@
+{
+  "category": "Uncategorized",
+  "description": "\"Build a high-performance Infinite Canvas prototype using React and HTML5 Canvas (or PixiJS/Konva if you prefer). The goal is to replicate the core navigation feel of Excalidraw. Please implement the following:\n\nCoordinate Systems: Distinguish between Screen Space (viewport) and World Space (the infinite plane). Create a utility to convert coordinates between the two.\n\nTransformation State: Maintain a global camera state containing { x, y, scale }.\n\nInteraction Logic:\n\nZoom: Implement 'Zoom at Mouse Cursor' (not just center-zoom) using the mouse wheel.\n\nPan: Implement panning via spacebar + click-drag or middle-mouse drag.\n\nInfinite Grid: Render a dynamic grid background that scales and fades as the user zooms in/out.\n\nPerformance & Rendering: Use requestAnimationFrame for a smooth 60fps experience. Ensure the rendering logic only draws elements currently within the viewport (Culling).\n\nPlease provide the code using a custom hook (e.g., useInfiniteCanvas) to separate the math/logic from the React UI component.\"\n\nmake them as main page of ui package",
+  "title": "Create draggable canvas with expandable size",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": true,
+  "model": "claude-opus",
+  "thinkingLevel": "none",
+  "reasoningEffort": "none",
+  "branchName": "scaffolding",
+  "priority": 2,
+  "planningMode": "skip",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "custom",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1771503185755-zerp4h4oq",
+  "descriptionHistory": [
+    {
+      "description": "create a blank canvas with expendable size by dragging. make it main page of electron app",
+      "timestamp": "2026-02-19T12:13:05.886Z",
+      "source": "initial"
+    },
+    {
+      "description": "\"Build a high-performance Infinite Canvas prototype using React and HTML5 Canvas (or PixiJS/Konva if you prefer). The goal is to replicate the core navigation feel of Excalidraw. Please implement the following:\n\nCoordinate Systems: Distinguish between Screen Space (viewport) and World Space (the infinite plane). Create a utility to convert coordinates between the two.\n\nTransformation State: Maintain a global camera state containing { x, y, scale }.\n\nInteraction Logic:\n\nZoom: Implement 'Zoom at Mouse Cursor' (not just center-zoom) using the mouse wheel.\n\nPan: Implement panning via spacebar + click-drag or middle-mouse drag.\n\nInfinite Grid: Render a dynamic grid background that scales and fades as the user zooms in/out.\n\nPerformance & Rendering: Use requestAnimationFrame for a smooth 60fps experience. Ensure the rendering logic only draws elements currently within the viewport (Culling).\n\nPlease provide the code using a custom hook (e.g., useInfiniteCanvas) to separate the math/logic from the React UI component.\"\n\nmake them as main page of ui package",
+      "timestamp": "2026-02-19T12:13:56.312Z",
+      "source": "edit"
+    }
+  ],
+  "startedAt": "2026-02-19T12:14:01.243Z",
+  "updatedAt": "2026-02-19T12:14:01.468Z"
+}
