@@ -17,18 +17,22 @@ import {
   screenToWorld,
   worldToScreen,
   getVisibleWorldBounds,
+  isRectVisible,
   clamp,
 } from '../utils/coordinates';
+import type { WorldTreeNode } from '../stores/types';
 
 // Constants
-const MIN_SCALE = 0.05;  // 5% minimum zoom
-const MAX_SCALE = 20;    // 2000% maximum zoom
+const MIN_SCALE = 0.05; // 5% minimum zoom
+const MAX_SCALE = 20; // 2000% maximum zoom
 const ZOOM_SENSITIVITY = 0.001;
-const GRID_BASE_SIZE = 50;  // Base grid cell size in world units
+const GRID_BASE_SIZE = 50; // Base grid cell size in world units
 
 export interface UseInfiniteCanvasOptions {
   initialCamera?: Partial<CameraState>;
   onCameraChange?: (camera: CameraState) => void;
+  /** Nodes to render on the canvas */
+  nodes?: WorldTreeNode[];
 }
 
 export interface UseInfiniteCanvasReturn {
@@ -42,10 +46,8 @@ export interface UseInfiniteCanvasReturn {
   isSpacePressed: boolean;
 }
 
-export function useInfiniteCanvas(
-  options: UseInfiniteCanvasOptions = {}
-): UseInfiniteCanvasReturn {
-  const { initialCamera = {}, onCameraChange } = options;
+export function useInfiniteCanvas(options: UseInfiniteCanvasOptions = {}): UseInfiniteCanvasReturn {
+  const { initialCamera = {}, onCameraChange, nodes = [] } = options;
 
   // Canvas reference
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -75,10 +77,13 @@ export function useInfiniteCanvas(
   }, []);
 
   // Set camera with callback
-  const setCamera = useCallback((newCamera: CameraState) => {
-    setCameraState(newCamera);
-    onCameraChange?.(newCamera);
-  }, [onCameraChange]);
+  const setCamera = useCallback(
+    (newCamera: CameraState) => {
+      setCameraState(newCamera);
+      onCameraChange?.(newCamera);
+    },
+    [onCameraChange]
+  );
 
   // Reset camera to initial position
   const resetCamera = useCallback(() => {
@@ -90,15 +95,21 @@ export function useInfiniteCanvas(
   }, [initialCamera, setCamera]);
 
   // Coordinate conversion helpers bound to current state
-  const screenToWorldBound = useCallback((screenPoint: Point): Point => {
-    const { width, height } = getCanvasDimensions();
-    return screenToWorld(screenPoint, camera, width, height);
-  }, [camera, getCanvasDimensions]);
+  const screenToWorldBound = useCallback(
+    (screenPoint: Point): Point => {
+      const { width, height } = getCanvasDimensions();
+      return screenToWorld(screenPoint, camera, width, height);
+    },
+    [camera, getCanvasDimensions]
+  );
 
-  const worldToScreenBound = useCallback((worldPoint: Point): Point => {
-    const { width, height } = getCanvasDimensions();
-    return worldToScreen(worldPoint, camera, width, height);
-  }, [camera, getCanvasDimensions]);
+  const worldToScreenBound = useCallback(
+    (worldPoint: Point): Point => {
+      const { width, height } = getCanvasDimensions();
+      return worldToScreen(worldPoint, camera, width, height);
+    },
+    [camera, getCanvasDimensions]
+  );
 
   // ============ GRID RENDERING ============
 
@@ -140,105 +151,102 @@ export function useInfiniteCanvas(
   /**
    * Draw the infinite grid
    */
-  const drawGrid = useCallback((
-    ctx: CanvasRenderingContext2D,
-    currentCamera: CameraState,
-    width: number,
-    height: number
-  ) => {
-    const { scale } = currentCamera;
-    const bounds = getVisibleWorldBounds(currentCamera, width, height);
+  const drawGrid = useCallback(
+    (ctx: CanvasRenderingContext2D, currentCamera: CameraState, width: number, height: number) => {
+      const { scale } = currentCamera;
+      const bounds = getVisibleWorldBounds(currentCamera, width, height);
 
-    // Calculate grid sizes (primary and secondary)
-    const primaryGridSize = calculateGridSize(scale);
-    const secondaryGridSize = primaryGridSize * 5;
+      // Calculate grid sizes (primary and secondary)
+      const primaryGridSize = calculateGridSize(scale);
+      const secondaryGridSize = primaryGridSize * 5;
 
-    // Draw secondary (larger) grid first
-    const secondaryOpacity = calculateGridOpacity(scale, secondaryGridSize) * 0.3;
-    if (secondaryOpacity > 0.01) {
-      ctx.strokeStyle = `rgba(255, 255, 255, ${secondaryOpacity})`;
-      ctx.lineWidth = 1;
+      // Draw secondary (larger) grid first
+      const secondaryOpacity = calculateGridOpacity(scale, secondaryGridSize) * 0.3;
+      if (secondaryOpacity > 0.01) {
+        ctx.strokeStyle = `rgba(255, 255, 255, ${secondaryOpacity})`;
+        ctx.lineWidth = 1;
 
-      // Calculate first grid line position (snap to grid)
-      const startX = Math.floor(bounds.minX / secondaryGridSize) * secondaryGridSize;
-      const startY = Math.floor(bounds.minY / secondaryGridSize) * secondaryGridSize;
+        // Calculate first grid line position (snap to grid)
+        const startX = Math.floor(bounds.minX / secondaryGridSize) * secondaryGridSize;
+        const startY = Math.floor(bounds.minY / secondaryGridSize) * secondaryGridSize;
 
-      ctx.beginPath();
+        ctx.beginPath();
 
-      // Vertical lines
-      for (let x = startX; x <= bounds.maxX; x += secondaryGridSize) {
-        const screenX = (x - currentCamera.x) * scale + width / 2;
-        ctx.moveTo(screenX, 0);
-        ctx.lineTo(screenX, height);
+        // Vertical lines
+        for (let x = startX; x <= bounds.maxX; x += secondaryGridSize) {
+          const screenX = (x - currentCamera.x) * scale + width / 2;
+          ctx.moveTo(screenX, 0);
+          ctx.lineTo(screenX, height);
+        }
+
+        // Horizontal lines
+        for (let y = startY; y <= bounds.maxY; y += secondaryGridSize) {
+          const screenY = (y - currentCamera.y) * scale + height / 2;
+          ctx.moveTo(0, screenY);
+          ctx.lineTo(width, screenY);
+        }
+
+        ctx.stroke();
       }
 
-      // Horizontal lines
-      for (let y = startY; y <= bounds.maxY; y += secondaryGridSize) {
-        const screenY = (y - currentCamera.y) * scale + height / 2;
-        ctx.moveTo(0, screenY);
-        ctx.lineTo(width, screenY);
+      // Draw primary (smaller) grid
+      const primaryOpacity = calculateGridOpacity(scale, primaryGridSize) * 0.15;
+      if (primaryOpacity > 0.01) {
+        ctx.strokeStyle = `rgba(255, 255, 255, ${primaryOpacity})`;
+        ctx.lineWidth = 0.5;
+
+        const startX = Math.floor(bounds.minX / primaryGridSize) * primaryGridSize;
+        const startY = Math.floor(bounds.minY / primaryGridSize) * primaryGridSize;
+
+        ctx.beginPath();
+
+        // Vertical lines
+        for (let x = startX; x <= bounds.maxX; x += primaryGridSize) {
+          const screenX = (x - currentCamera.x) * scale + width / 2;
+          ctx.moveTo(screenX, 0);
+          ctx.lineTo(screenX, height);
+        }
+
+        // Horizontal lines
+        for (let y = startY; y <= bounds.maxY; y += primaryGridSize) {
+          const screenY = (y - currentCamera.y) * scale + height / 2;
+          ctx.moveTo(0, screenY);
+          ctx.lineTo(width, screenY);
+        }
+
+        ctx.stroke();
       }
 
-      ctx.stroke();
-    }
+      // Draw origin crosshair
+      const originScreen = worldToScreen({ x: 0, y: 0 }, currentCamera, width, height);
+      if (
+        originScreen.x >= -10 &&
+        originScreen.x <= width + 10 &&
+        originScreen.y >= -10 &&
+        originScreen.y <= height + 10
+      ) {
+        ctx.strokeStyle = 'rgba(233, 69, 96, 0.6)'; // Accent color
+        ctx.lineWidth = 2;
+        ctx.beginPath();
 
-    // Draw primary (smaller) grid
-    const primaryOpacity = calculateGridOpacity(scale, primaryGridSize) * 0.15;
-    if (primaryOpacity > 0.01) {
-      ctx.strokeStyle = `rgba(255, 255, 255, ${primaryOpacity})`;
-      ctx.lineWidth = 0.5;
+        // Horizontal line
+        ctx.moveTo(originScreen.x - 20, originScreen.y);
+        ctx.lineTo(originScreen.x + 20, originScreen.y);
 
-      const startX = Math.floor(bounds.minX / primaryGridSize) * primaryGridSize;
-      const startY = Math.floor(bounds.minY / primaryGridSize) * primaryGridSize;
+        // Vertical line
+        ctx.moveTo(originScreen.x, originScreen.y - 20);
+        ctx.lineTo(originScreen.x, originScreen.y + 20);
 
-      ctx.beginPath();
-
-      // Vertical lines
-      for (let x = startX; x <= bounds.maxX; x += primaryGridSize) {
-        const screenX = (x - currentCamera.x) * scale + width / 2;
-        ctx.moveTo(screenX, 0);
-        ctx.lineTo(screenX, height);
+        ctx.stroke();
       }
-
-      // Horizontal lines
-      for (let y = startY; y <= bounds.maxY; y += primaryGridSize) {
-        const screenY = (y - currentCamera.y) * scale + height / 2;
-        ctx.moveTo(0, screenY);
-        ctx.lineTo(width, screenY);
-      }
-
-      ctx.stroke();
-    }
-
-    // Draw origin crosshair
-    const originScreen = worldToScreen({ x: 0, y: 0 }, currentCamera, width, height);
-    if (
-      originScreen.x >= -10 && originScreen.x <= width + 10 &&
-      originScreen.y >= -10 && originScreen.y <= height + 10
-    ) {
-      ctx.strokeStyle = 'rgba(233, 69, 96, 0.6)';  // Accent color
-      ctx.lineWidth = 2;
-      ctx.beginPath();
-
-      // Horizontal line
-      ctx.moveTo(originScreen.x - 20, originScreen.y);
-      ctx.lineTo(originScreen.x + 20, originScreen.y);
-
-      // Vertical line
-      ctx.moveTo(originScreen.x, originScreen.y - 20);
-      ctx.lineTo(originScreen.x, originScreen.y + 20);
-
-      ctx.stroke();
-    }
-  }, [calculateGridSize, calculateGridOpacity]);
+    },
+    [calculateGridSize, calculateGridOpacity]
+  );
 
   /**
    * Draw debug info overlay
    */
-  const drawDebugInfo = useCallback((
-    ctx: CanvasRenderingContext2D,
-    currentCamera: CameraState
-  ) => {
+  const drawDebugInfo = useCallback((ctx: CanvasRenderingContext2D, currentCamera: CameraState) => {
     ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
     ctx.font = '12px monospace';
 
@@ -268,6 +276,128 @@ export function useInfiniteCanvas(
     }
   }, []);
 
+  // Node rendering constants
+  const NODE_WIDTH = 160;
+  const NODE_HEIGHT = 80;
+  const NODE_BORDER_RADIUS = 12;
+  const NODE_PADDING = 12;
+
+  /**
+   * Draw a single node on the canvas
+   */
+  const drawNode = useCallback(
+    (
+      ctx: CanvasRenderingContext2D,
+      node: WorldTreeNode,
+      currentCamera: CameraState,
+      width: number,
+      height: number
+    ) => {
+      // Convert node world position to screen position
+      const screenPos = worldToScreen(node.position, currentCamera, width, height);
+
+      // Calculate node dimensions in screen space
+      const nodeWidth = NODE_WIDTH * currentCamera.scale;
+      const nodeHeight = NODE_HEIGHT * currentCamera.scale;
+      const borderRadius = NODE_BORDER_RADIUS * currentCamera.scale;
+      const padding = NODE_PADDING * currentCamera.scale;
+
+      // Center the node on its position
+      const x = screenPos.x - nodeWidth / 2;
+      const y = screenPos.y - nodeHeight / 2;
+
+      // Draw node background with rounded corners
+      ctx.beginPath();
+      ctx.roundRect(x, y, nodeWidth, nodeHeight, borderRadius);
+
+      // Different styling for root vs regular nodes
+      if (node.isRoot) {
+        // Root node - accent colored background
+        ctx.fillStyle = 'rgba(233, 69, 96, 0.9)'; // Accent color
+        ctx.fill();
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.3)';
+        ctx.lineWidth = 2 * currentCamera.scale;
+        ctx.stroke();
+      } else {
+        // Regular node - darker background
+        ctx.fillStyle = 'rgba(45, 45, 70, 0.95)';
+        ctx.fill();
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.2)';
+        ctx.lineWidth = 1 * currentCamera.scale;
+        ctx.stroke();
+      }
+
+      // Draw node label
+      const fontSize = Math.max(12 * currentCamera.scale, 8);
+      ctx.font = `bold ${fontSize}px Inter, system-ui, sans-serif`;
+      ctx.fillStyle = node.isRoot ? '#ffffff' : 'rgba(255, 255, 255, 0.95)';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+
+      // Truncate label if too long
+      const maxLabelWidth = nodeWidth - padding * 2;
+      let displayLabel = node.label;
+      let labelWidth = ctx.measureText(displayLabel).width;
+
+      if (labelWidth > maxLabelWidth) {
+        while (labelWidth > maxLabelWidth && displayLabel.length > 0) {
+          displayLabel = displayLabel.slice(0, -1);
+          labelWidth = ctx.measureText(displayLabel + '...').width;
+        }
+        displayLabel += '...';
+      }
+
+      ctx.fillText(displayLabel, screenPos.x, screenPos.y);
+
+      // Draw a subtle icon for root node
+      if (node.isRoot) {
+        const iconSize = 16 * currentCamera.scale;
+        const iconY = y + padding / 2 + iconSize / 2;
+
+        // Draw a simple tree/star icon
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.7)';
+        ctx.beginPath();
+        ctx.arc(screenPos.x, iconY, iconSize / 3, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    },
+    []
+  );
+
+  /**
+   * Draw all nodes on the canvas with viewport culling
+   */
+  const drawNodes = useCallback(
+    (
+      ctx: CanvasRenderingContext2D,
+      nodesToDraw: WorldTreeNode[],
+      currentCamera: CameraState,
+      width: number,
+      height: number
+    ) => {
+      for (const node of nodesToDraw) {
+        // Viewport culling - only draw nodes that are visible
+        const nodeWorldWidth = NODE_WIDTH;
+        const nodeWorldHeight = NODE_HEIGHT;
+
+        if (
+          isRectVisible(
+            node.position.x - nodeWorldWidth / 2,
+            node.position.y - nodeWorldHeight / 2,
+            nodeWorldWidth,
+            nodeWorldHeight,
+            currentCamera,
+            width,
+            height
+          )
+        ) {
+          drawNode(ctx, node, currentCamera, width, height);
+        }
+      }
+    },
+    [drawNode]
+  );
+
   /**
    * Main render function
    */
@@ -281,64 +411,72 @@ export function useInfiniteCanvas(
     const { width, height } = canvas;
 
     // Clear canvas with background color
-    ctx.fillStyle = '#1a1a2e';  // --color-bg-primary
+    ctx.fillStyle = '#1a1a2e'; // --color-bg-primary
     ctx.fillRect(0, 0, width, height);
 
     // Draw grid
     drawGrid(ctx, camera, width, height);
+
+    // Draw nodes
+    if (nodes.length > 0) {
+      drawNodes(ctx, nodes, camera, width, height);
+    }
 
     // Draw debug info
     drawDebugInfo(ctx, camera);
 
     // Schedule next frame
     animationFrameRef.current = requestAnimationFrame(render);
-  }, [camera, drawGrid, drawDebugInfo]);
+  }, [camera, drawGrid, drawNodes, drawDebugInfo, nodes]);
 
   // ============ EVENT HANDLERS ============
 
   /**
    * Handle mouse wheel for zoom at cursor
    */
-  const handleWheel = useCallback((e: WheelEvent) => {
-    e.preventDefault();
+  const handleWheel = useCallback(
+    (e: WheelEvent) => {
+      e.preventDefault();
 
-    const canvas = canvasRef.current;
-    if (!canvas) return;
+      const canvas = canvasRef.current;
+      if (!canvas) return;
 
-    const rect = canvas.getBoundingClientRect();
-    const mouseX = e.clientX - rect.left;
-    const mouseY = e.clientY - rect.top;
+      const rect = canvas.getBoundingClientRect();
+      const mouseX = e.clientX - rect.left;
+      const mouseY = e.clientY - rect.top;
 
-    // Get world position under mouse before zoom
-    const worldBefore = screenToWorld(
-      { x: mouseX, y: mouseY },
-      camera,
-      canvas.width,
-      canvas.height
-    );
+      // Get world position under mouse before zoom
+      const worldBefore = screenToWorld(
+        { x: mouseX, y: mouseY },
+        camera,
+        canvas.width,
+        canvas.height
+      );
 
-    // Calculate new scale
-    const delta = -e.deltaY * ZOOM_SENSITIVITY;
-    const newScale = clamp(camera.scale * (1 + delta), MIN_SCALE, MAX_SCALE);
+      // Calculate new scale
+      const delta = -e.deltaY * ZOOM_SENSITIVITY;
+      const newScale = clamp(camera.scale * (1 + delta), MIN_SCALE, MAX_SCALE);
 
-    // Get world position under mouse after zoom (with new scale, same camera position)
-    const tempCamera = { ...camera, scale: newScale };
-    const worldAfter = screenToWorld(
-      { x: mouseX, y: mouseY },
-      tempCamera,
-      canvas.width,
-      canvas.height
-    );
+      // Get world position under mouse after zoom (with new scale, same camera position)
+      const tempCamera = { ...camera, scale: newScale };
+      const worldAfter = screenToWorld(
+        { x: mouseX, y: mouseY },
+        tempCamera,
+        canvas.width,
+        canvas.height
+      );
 
-    // Adjust camera position to keep the mouse over the same world point
-    const newCamera: CameraState = {
-      x: camera.x + (worldBefore.x - worldAfter.x),
-      y: camera.y + (worldBefore.y - worldAfter.y),
-      scale: newScale,
-    };
+      // Adjust camera position to keep the mouse over the same world point
+      const newCamera: CameraState = {
+        x: camera.x + (worldBefore.x - worldAfter.x),
+        y: camera.y + (worldBefore.y - worldAfter.y),
+        scale: newScale,
+      };
 
-    setCamera(newCamera);
-  }, [camera, setCamera]);
+      setCamera(newCamera);
+    },
+    [camera, setCamera]
+  );
 
   /**
    * Handle mouse down for panning
@@ -366,36 +504,39 @@ export function useInfiniteCanvas(
   /**
    * Handle mouse move for panning
    */
-  const handleMouseMove = useCallback((e: MouseEvent) => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
+  const handleMouseMove = useCallback(
+    (e: MouseEvent) => {
+      const canvas = canvasRef.current;
+      if (!canvas) return;
 
-    const rect = canvas.getBoundingClientRect();
-    const currentPos = {
-      x: e.clientX - rect.left,
-      y: e.clientY - rect.top,
-    };
+      const rect = canvas.getBoundingClientRect();
+      const currentPos = {
+        x: e.clientX - rect.left,
+        y: e.clientY - rect.top,
+      };
 
-    // Update cursor based on space key
-    if (isSpacePressedRef.current && !isPanningRef.current) {
-      canvas.style.cursor = 'grab';
-    }
+      // Update cursor based on space key
+      if (isSpacePressedRef.current && !isPanningRef.current) {
+        canvas.style.cursor = 'grab';
+      }
 
-    if (isPanningRef.current) {
-      // Calculate delta in screen space
-      const deltaX = currentPos.x - lastMousePosRef.current.x;
-      const deltaY = currentPos.y - lastMousePosRef.current.y;
+      if (isPanningRef.current) {
+        // Calculate delta in screen space
+        const deltaX = currentPos.x - lastMousePosRef.current.x;
+        const deltaY = currentPos.y - lastMousePosRef.current.y;
 
-      // Convert delta to world space and update camera
-      setCamera({
-        ...camera,
-        x: camera.x - deltaX / camera.scale,
-        y: camera.y - deltaY / camera.scale,
-      });
+        // Convert delta to world space and update camera
+        setCamera({
+          ...camera,
+          x: camera.x - deltaX / camera.scale,
+          y: camera.y - deltaY / camera.scale,
+        });
 
-      lastMousePosRef.current = currentPos;
-    }
-  }, [camera, setCamera]);
+        lastMousePosRef.current = currentPos;
+      }
+    },
+    [camera, setCamera]
+  );
 
   /**
    * Handle mouse up to stop panning
@@ -507,7 +648,15 @@ export function useInfiniteCanvas(
       window.removeEventListener('keyup', handleKeyUp);
       resizeObserver.disconnect();
     };
-  }, [handleWheel, handleMouseDown, handleMouseMove, handleMouseUp, handleKeyDown, handleKeyUp, handleResize]);
+  }, [
+    handleWheel,
+    handleMouseDown,
+    handleMouseMove,
+    handleMouseUp,
+    handleKeyDown,
+    handleKeyUp,
+    handleResize,
+  ]);
 
   // Start render loop
   useEffect(() => {

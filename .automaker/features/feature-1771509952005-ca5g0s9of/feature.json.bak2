@@ -1,0 +1,29 @@
+{
+  "category": "Uncategorized",
+  "description": "apps/ui/src/tests/InfiniteCanvas.test.tsx > InfiniteCanvas Component > Camera change callback > should call onCameraChange when provided\nTypeError: ctx.roundRect is not a function\n ❯ apps/ui/src/renderer/hooks/useInfiniteCanvas.ts:311:11\n    309|       // Draw node background with rounded corners\n    310|       ctx.beginPath();\n    311|       ctx.roundRect(x, y, nodeWidth, nodeHeight, borderRadius);\n       |           ^\n    312|\n    313|       // Different styling for root vs regular nodes\n ❯ apps/ui/src/renderer/hooks/useInfiniteCanvas.ts:394:11\n ❯ apps/ui/src/renderer/hooks/useInfiniteCanvas.ts:422:7\n ❯ apps/ui/src/tests/InfiniteCanvas.test.tsx:95:10\n\ntest failing \n\napps/ui/src/tests/InfiniteCanvas.test.tsx > InfiniteCanvas Component > Camera change callback > should call onCameraChange when provided\nTypeError: ctx.roundRect is not a function\n ❯ apps/ui/src/renderer/hooks/useInfiniteCanvas.ts:311:11\n    309|       // Draw node background with rounded corners\n    310|       ctx.beginPath();\n    311|       ctx.roundRect(x, y, nodeWidth, nodeHeight, borderRadius);\n       |           ^\n    312|\n    313|       // Different styling for root vs regular nodes\n ❯ apps/ui/src/renderer/hooks/useInfiniteCanvas.ts:394:11\n ❯ apps/ui/src/renderer/hooks/useInfiniteCanvas.ts:422:7\n ❯ apps/ui/src/tests/InfiniteCanvas.test.tsx:95:10",
+  "title": "Fix canvas roundRect polyfill for tests",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": true,
+  "model": "claude-opus",
+  "thinkingLevel": "none",
+  "reasoningEffort": "none",
+  "branchName": "canvas",
+  "priority": 2,
+  "planningMode": "skip",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "in_progress",
+  "id": "feature-1771509952005-ca5g0s9of",
+  "descriptionHistory": [
+    {
+      "description": "apps/ui/src/tests/InfiniteCanvas.test.tsx > InfiniteCanvas Component > Camera change callback > should call onCameraChange when provided\nTypeError: ctx.roundRect is not a function\n ❯ apps/ui/src/renderer/hooks/useInfiniteCanvas.ts:311:11\n    309|       // Draw node background with rounded corners\n    310|       ctx.beginPath();\n    311|       ctx.roundRect(x, y, nodeWidth, nodeHeight, borderRadius);\n       |           ^\n    312|\n    313|       // Different styling for root vs regular nodes\n ❯ apps/ui/src/renderer/hooks/useInfiniteCanvas.ts:394:11\n ❯ apps/ui/src/renderer/hooks/useInfiniteCanvas.ts:422:7\n ❯ apps/ui/src/tests/InfiniteCanvas.test.tsx:95:10\n\ntest failing \n\napps/ui/src/tests/InfiniteCanvas.test.tsx > InfiniteCanvas Component > Camera change callback > should call onCameraChange when provided\nTypeError: ctx.roundRect is not a function\n ❯ apps/ui/src/renderer/hooks/useInfiniteCanvas.ts:311:11\n    309|       // Draw node background with rounded corners\n    310|       ctx.beginPath();\n    311|       ctx.roundRect(x, y, nodeWidth, nodeHeight, borderRadius);\n       |           ^\n    312|\n    313|       // Different styling for root vs regular nodes\n ❯ apps/ui/src/renderer/hooks/useInfiniteCanvas.ts:394:11\n ❯ apps/ui/src/renderer/hooks/useInfiniteCanvas.ts:422:7\n ❯ apps/ui/src/tests/InfiniteCanvas.test.tsx:95:10",
+      "timestamp": "2026-02-19T14:05:52.115Z",
+      "source": "initial"
+    }
+  ],
+  "startedAt": "2026-02-19T14:06:27.270Z"
+}

@@ -1,0 +1,31 @@
+{
+  "category": "Uncategorized",
+  "description": "update graph handler test",
+  "title": "Update graph handler test coverage",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": true,
+  "model": "claude-opus",
+  "thinkingLevel": "none",
+  "reasoningEffort": "none",
+  "branchName": "canvas",
+  "priority": 2,
+  "planningMode": "skip",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "waiting_approval",
+  "id": "feature-1771509472148-7xiq1uyt0",
+  "descriptionHistory": [
+    {
+      "description": "update graph handler test",
+      "timestamp": "2026-02-19T13:57:52.244Z",
+      "source": "initial"
+    }
+  ],
+  "startedAt": "2026-02-19T13:57:58.932Z",
+  "updatedAt": "2026-02-19T14:02:50.910Z",
+  "justFinishedAt": "2026-02-19T14:02:50.910Z"
+}

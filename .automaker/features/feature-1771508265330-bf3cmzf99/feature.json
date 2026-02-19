@@ -1,0 +1,31 @@
+{
+  "category": "Uncategorized",
+  "description": "\"Create a Zustand store in TypeScript to handle the state of a 'World Tree' graph system. Focus strictly on the state management and persistence.\n\n1. Data Structures:\n\nNode: { id: string, label: string, description: string, position: { x: number, y: number }, parentId: string | null, isRoot: boolean, isDraggable: boolean }\n\nEdge: { id: string, sourceId: string, targetId: string }\n\n2. Store Requirements (use zustand/middleware):\n\nPersistence: Use the persist middleware to sync the state with localStorage.\n\nInitial State: If the store is empty, automatically initialize it with a 'World Root' node at { x: 0, y: 0 }. This node must have isRoot: true and isDraggable: false.\n\n3. Actions:\n\naddNode(parentId: string, data: { label: string, description: string, position: { x: number, y: number } }):\n\nCreate a new node with a unique ID.\n\nCreate a corresponding edge connecting the parentId to the new node's ID.\n\nupdateNodePosition(id: string, position: { x: number, y: number }):\n\nUpdate the position of the specified node.\n\nConstraint: Do not allow updates if isRoot is true.\n\ndeleteNode(id: string):\n\nRemove the node and all edges connected to it.\n\nConstraint: Prevent deletion of the Root node.\n\nreset(): Clear all nodes/edges and re-initialize the Root node.",
+  "title": "Implement Zustand store for World Tree graph state management",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": true,
+  "model": "claude-opus",
+  "thinkingLevel": "none",
+  "reasoningEffort": "none",
+  "branchName": "canvas",
+  "priority": 2,
+  "planningMode": "skip",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": false,
+  "status": "waiting_approval",
+  "id": "feature-1771508265330-bf3cmzf99",
+  "descriptionHistory": [
+    {
+      "description": "\"Create a Zustand store in TypeScript to handle the state of a 'World Tree' graph system. Focus strictly on the state management and persistence.\n\n1. Data Structures:\n\nNode: { id: string, label: string, description: string, position: { x: number, y: number }, parentId: string | null, isRoot: boolean, isDraggable: boolean }\n\nEdge: { id: string, sourceId: string, targetId: string }\n\n2. Store Requirements (use zustand/middleware):\n\nPersistence: Use the persist middleware to sync the state with localStorage.\n\nInitial State: If the store is empty, automatically initialize it with a 'World Root' node at { x: 0, y: 0 }. This node must have isRoot: true and isDraggable: false.\n\n3. Actions:\n\naddNode(parentId: string, data: { label: string, description: string, position: { x: number, y: number } }):\n\nCreate a new node with a unique ID.\n\nCreate a corresponding edge connecting the parentId to the new node's ID.\n\nupdateNodePosition(id: string, position: { x: number, y: number }):\n\nUpdate the position of the specified node.\n\nConstraint: Do not allow updates if isRoot is true.\n\ndeleteNode(id: string):\n\nRemove the node and all edges connected to it.\n\nConstraint: Prevent deletion of the Root node.\n\nreset(): Clear all nodes/edges and re-initialize the Root node.",
+      "timestamp": "2026-02-19T13:37:45.431Z",
+      "source": "initial"
+    }
+  ],
+  "startedAt": "2026-02-19T13:53:08.365Z",
+  "updatedAt": "2026-02-19T13:55:49.284Z",
+  "justFinishedAt": "2026-02-19T13:55:49.284Z"
+}

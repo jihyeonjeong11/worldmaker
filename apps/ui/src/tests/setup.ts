@@ -9,16 +9,22 @@ HTMLCanvasElement.prototype.getContext = vi.fn((contextType: string) => {
       strokeStyle: '',
       lineWidth: 1,
       font: '',
+      textAlign: 'start',
+      textBaseline: 'alphabetic',
       fillRect: vi.fn(),
       clearRect: vi.fn(),
       beginPath: vi.fn(),
       moveTo: vi.fn(),
       lineTo: vi.fn(),
       stroke: vi.fn(),
+      fill: vi.fn(),
       fillText: vi.fn(),
       scale: vi.fn(),
       save: vi.fn(),
       restore: vi.fn(),
+      roundRect: vi.fn(),
+      arc: vi.fn(),
+      measureText: vi.fn(() => ({ width: 50 })),
     } as unknown as CanvasRenderingContext2D;
   }
   return null;

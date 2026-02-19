@@ -9,10 +9,12 @@
  * - Dynamic grid that scales and fades
  * - 60fps rendering with requestAnimationFrame
  * - Viewport culling for performance
+ * - Renders World Tree nodes from Zustand store
  */
 
 import React, { useCallback } from 'react';
 import { useInfiniteCanvas } from '../../hooks/useInfiniteCanvas';
+import { useWorldTreeStore } from '../../stores';
 
 export interface InfiniteCanvasProps {
   /** Optional class name for the container */
@@ -25,6 +27,9 @@ export const InfiniteCanvas: React.FC<InfiniteCanvasProps> = ({
   className = '',
   onCameraChange,
 }) => {
+  // Get nodes from the World Tree store
+  const nodes = useWorldTreeStore((state) => state.nodes);
+
   const {
     canvasRef,
     camera,
@@ -34,6 +39,7 @@ export const InfiniteCanvas: React.FC<InfiniteCanvasProps> = ({
   } = useInfiniteCanvas({
     initialCamera: { x: 0, y: 0, scale: 1 },
     onCameraChange,
+    nodes,
   });
 
   const handleResetCamera = useCallback(() => {

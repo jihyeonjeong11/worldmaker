@@ -2,6 +2,65 @@
   "version": 1,
   "events": [
     {
+      "id": "evt-1771510147105-2cbe841c",
+      "trigger": "feature_success",
+      "timestamp": "2026-02-19T14:09:07.105Z",
+      "featureName": "Fix canvas roundRect polyfill for tests",
+      "featureId": "feature-1771509952005-ca5g0s9of"
+    },
+    {
+      "id": "evt-1771509952119-2354d30a",
+      "trigger": "feature_created",
+      "timestamp": "2026-02-19T14:05:52.119Z",
+      "featureId": "feature-1771509952005-ca5g0s9of"
+    },
+    {
+      "id": "evt-1771509770945-a961e093",
+      "trigger": "feature_success",
+      "timestamp": "2026-02-19T14:02:50.945Z",
+      "featureName": "Update graph handler test coverage",
+      "featureId": "feature-1771509472148-7xiq1uyt0"
+    },
+    {
+      "id": "evt-1771509472248-1c51b040",
+      "trigger": "feature_created",
+      "timestamp": "2026-02-19T13:57:52.248Z",
+      "featureId": "feature-1771509472148-7xiq1uyt0"
+    },
+    {
+      "id": "evt-1771509349300-fcaeaf1b",
+      "trigger": "feature_success",
+      "timestamp": "2026-02-19T13:55:49.300Z",
+      "featureName": "Implement Zustand store for World Tree graph state management",
+      "featureId": "feature-1771508265330-bf3cmzf99"
+    },
+    {
+      "id": "evt-1771509150730-9b4ff2f8",
+      "trigger": "feature_success",
+      "timestamp": "2026-02-19T13:52:30.730Z",
+      "featureName": "",
+      "featureId": "feature-1771508791704-ojul92tzy"
+    },
+    {
+      "id": "evt-1771508791800-5e5c4124",
+      "trigger": "feature_created",
+      "timestamp": "2026-02-19T13:46:31.800Z",
+      "featureId": "feature-1771508791704-ojul92tzy"
+    },
+    {
+      "id": "evt-1771508555257-d17b34de",
+      "trigger": "feature_success",
+      "timestamp": "2026-02-19T13:42:35.257Z",
+      "featureName": "Implement Zustand store for World Tree graph state management",
+      "featureId": "feature-1771508265330-bf3cmzf99"
+    },
+    {
+      "id": "evt-1771508265434-a7c62607",
+      "trigger": "feature_created",
+      "timestamp": "2026-02-19T13:37:45.434Z",
+      "featureId": "feature-1771508265330-bf3cmzf99"
+    },
+    {
       "id": "evt-1771505600923-387180cc",
       "trigger": "feature_success",
       "timestamp": "2026-02-19T12:53:20.923Z",

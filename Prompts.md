@@ -23,3 +23,41 @@ make them as main page of ui package
 ```
 
 2.
+
+```
+"Create a Zustand store in TypeScript to handle the state of a 'World Tree' graph system. Focus strictly on the state management and persistence.
+
+1. Data Structures:
+
+Node: { id: string, label: string, description: string, position: { x: number, y: number }, parentId: string | null, isRoot: boolean, isDraggable: boolean }
+
+Edge: { id: string, sourceId: string, targetId: string }
+
+2. Store Requirements (use zustand/middleware):
+
+Persistence: Use the persist middleware to sync the state with localStorage.
+
+Initial State: If the store is empty, automatically initialize it with a 'World Root' node at { x: 0, y: 0 }. This node must have isRoot: true and isDraggable: false.
+
+3. Actions:
+
+addNode(parentId: string, data: { label: string, description: string, position: { x: number, y: number } }):
+
+Create a new node with a unique ID.
+
+Create a corresponding edge connecting the parentId to the new node's ID.
+
+updateNodePosition(id: string, position: { x: number, y: number }):
+
+Update the position of the specified node.
+
+Constraint: Do not allow updates if isRoot is true.
+
+deleteNode(id: string):
+
+Remove the node and all edges connected to it.
+
+Constraint: Prevent deletion of the Root node.
+
+reset(): Clear all nodes/edges and re-initialize the Root node.
+```

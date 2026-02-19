@@ -1,0 +1,30 @@
+{
+  "category": "Uncategorized",
+  "description": "now create a form for create root node",
+  "title": "",
+  "images": [],
+  "imagePaths": [],
+  "textFilePaths": [],
+  "skipTests": true,
+  "model": "claude-opus",
+  "thinkingLevel": "none",
+  "reasoningEffort": "none",
+  "branchName": "canvas",
+  "priority": 2,
+  "planningMode": "skip",
+  "requirePlanApproval": false,
+  "dependencies": [],
+  "workMode": "current",
+  "titleGenerating": "now create a form for create root node",
+  "status": "in_progress",
+  "id": "feature-1771508791704-ojul92tzy",
+  "descriptionHistory": [
+    {
+      "description": "now create a form for create root node",
+      "timestamp": "2026-02-19T13:46:31.797Z",
+      "source": "initial"
+    }
+  ],
+  "startedAt": "2026-02-19T13:46:35.166Z",
+  "updatedAt": "2026-02-19T13:46:35.392Z"
+}
