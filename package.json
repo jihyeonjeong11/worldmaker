@@ -12,7 +12,9 @@
   },
   "scripts": {
     "test": "vitest run",
-    "dev": "concurrently \"npm run dev  --workspace=apps/server\" \"npm run dev --workspace=apps/ui\"",
+    "dev:local": "concurrently \"npm run dev  --workspace=apps/server\" \"npm run dev --workspace=apps/ui\"",
+    "build:packages": "npm run build -w libs/types && npm run build -w libs/utils",
+    "dev:docker": "docker compose up",
     "prepare": "husky"
   },
   "keywords": [

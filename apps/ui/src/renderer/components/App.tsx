@@ -5,11 +5,25 @@ const App: React.FC = () => {
   const [platform, setPlatform] = useState<string>('');
 
   useEffect(() => {
+    const fetchHello = async () => {
+      try {
+        const response = await fetch('http://localhost:3000/hello');
+        const data = await response.text();
+        console.log('Server Response:', data);
+      } catch (error) {
+        console.error('fetch error:', error);
+      }
+    };
+
+    fetchHello();
+  }, []);
+
+  useEffect(() => {
     const loadAppInfo = async () => {
       try {
         if (window.electronAPI) {
-          const version = await window.electronAPI.invoke('app:getVersion') as string;
-          const plat = await window.electronAPI.invoke('app:getPlatform') as string;
+          const version = (await window.electronAPI.invoke('app:getVersion')) as string;
+          const plat = (await window.electronAPI.invoke('app:getPlatform')) as string;
           setAppVersion(version);
           setPlatform(plat);
         }
@@ -24,7 +38,7 @@ const App: React.FC = () => {
   return (
     <div className="app">
       <header className="app-header">
-        <h1 className="app-title">Worldmaker</h1>
+        <h1 className="app-title">Worldmaker hello</h1>
         <p className="app-subtitle">Fantasy World-Building Tool</p>
       </header>
 
@@ -32,9 +46,8 @@ const App: React.FC = () => {
         <div className="welcome-card">
           <h2>Welcome to Worldmaker</h2>
           <p>
-            Build rich fantasy worlds by layering customizable story cards.
-            Create regions, characters, events, lore, factions, and landmarks
-            to craft immersive narrative settings.
+            Build rich fantasy worlds by layering customizable story cards. Create regions,
+            characters, events, lore, factions, and landmarks to craft immersive narrative settings.
           </p>
           {appVersion && (
             <div className="app-info">

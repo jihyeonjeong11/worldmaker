@@ -1,0 +1,205 @@
+# =============================================================================
+# Worldmaker Monorepo Docker Compose Configuration
+# =============================================================================
+#
+# Services:
+#   - worldmaker-server: Express.js backend API server (production)
+#   - worldmaker-ui: Electron UI application with X11 display support
+#   - server-dev: Development server with hot reload
+#   - ui-dev: Development UI with hot reload
+#
+# Usage:
+#   Full stack (production):  docker compose up worldmaker-server worldmaker-ui
+#   Full stack (development): docker compose up server-dev ui-dev
+#   Server only:              docker compose up worldmaker-server
+#   Build only:               docker compose build
+#
+# For X11 forwarding on Linux host:
+#   xhost +local:docker
+#   docker compose up worldmaker-ui
+#
+# =============================================================================
+
+services:
+  # ---------------------------------------------------------------------------
+  # Production Server (worldmaker-server)
+  # ---------------------------------------------------------------------------
+  worldmaker-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: server
+    container_name: worldmaker-server
+    hostname: worldmaker-server
+    ports:
+      - '3000:3000'
+    environment:
+      - NODE_ENV=production
+    networks:
+      - worldmaker-network
+    restart: unless-stopped
+    healthcheck:
+      test: ['CMD', 'wget', '--no-verbose', '--tries=1', '--spider', 'http://localhost:3000/health']
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+
+  # ---------------------------------------------------------------------------
+  # Production UI - Electron with X11 Display (worldmaker-ui)
+  # ---------------------------------------------------------------------------
+  worldmaker-ui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: ui-headless
+    container_name: worldmaker-ui
+    hostname: worldmaker-ui
+    depends_on:
+      worldmaker-server:
+        condition: service_healthy
+    environment:
+      - NODE_ENV=production
+      - DISPLAY=:99
+      - ELECTRON_DISABLE_SANDBOX=1
+      - ELECTRON_ENABLE_LOGGING=1
+      # API endpoint - connects to server via Docker network
+      - API_URL=http://worldmaker-server:3000
+      - VITE_API_URL=http://worldmaker-server:3000
+    networks:
+      - worldmaker-network
+    # Security options for Electron in container
+    security_opt:
+      - seccomp:unconfined
+    # Shared memory size for Electron/Chromium
+    shm_size: '2gb'
+    restart: unless-stopped
+
+  # ---------------------------------------------------------------------------
+  # Production UI with X11 Forwarding (for GUI display on host)
+  # ---------------------------------------------------------------------------
+  worldmaker-ui-x11:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: ui-development
+    container_name: worldmaker-ui-x11
+    hostname: worldmaker-ui-x11
+    depends_on:
+      worldmaker-server:
+        condition: service_healthy
+    environment:
+      - NODE_ENV=production
+      - DISPLAY=${DISPLAY:-:0}
+      - ELECTRON_DISABLE_SANDBOX=1
+      - ELECTRON_ENABLE_LOGGING=1
+      - API_URL=http://worldmaker-server:3000
+      - VITE_API_URL=http://worldmaker-server:3000
+    volumes:
+      # X11 socket for display forwarding
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      # X authority for authentication
+      - ${XAUTHORITY:-~/.Xauthority}:/root/.Xauthority:ro
+    networks:
+      - worldmaker-network
+    security_opt:
+      - seccomp:unconfined
+    shm_size: '2gb'
+    # Override command to run built app directly
+    command: >
+      bash -c "npm run build -w apps/ui && npm run start -w apps/ui"
+
+  # ---------------------------------------------------------------------------
+  # Development Server with Hot Reload
+  # ---------------------------------------------------------------------------
+  server-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    container_name: worldmaker-server-dev
+    hostname: worldmaker-server
+    ports:
+      - '3000:3000'
+    environment:
+      - NODE_ENV=development
+    volumes:
+      # Mount source code for hot reload
+      - ./apps:/app/apps:delegated
+      - ./libs:/app/libs:delegated
+      # Mount package files (read-only for stability)
+      - ./package.json:/app/package.json:ro
+      - ./package-lock.json:/app/package-lock.json:ro
+      # Preserve node_modules inside container
+      - node_modules:/app/node_modules
+      - server_node_modules:/app/apps/server/node_modules
+      - ui_node_modules:/app/apps/ui/node_modules
+    networks:
+      - worldmaker-network
+    command: npm run dev -w apps/server
+    stdin_open: true
+    tty: true
+    healthcheck:
+      test: ['CMD', 'wget', '--no-verbose', '--tries=1', '--spider', 'http://localhost:3000/health']
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+
+  # ---------------------------------------------------------------------------
+  # Development UI with Hot Reload and X11 Display
+  # ---------------------------------------------------------------------------
+  ui-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: ui-development
+    container_name: worldmaker-ui-dev
+    hostname: worldmaker-ui
+    depends_on:
+      server-dev:
+        condition: service_healthy
+    ports:
+      - '5173:5173'
+    environment:
+      - NODE_ENV=development
+      - DISPLAY=${DISPLAY:-:99}
+      - ELECTRON_DISABLE_SANDBOX=1
+      - ELECTRON_ENABLE_LOGGING=1
+      # API endpoint - connects to dev server via Docker network
+      - API_URL=http://worldmaker-server:3000
+      - VITE_API_URL=http://worldmaker-server:3000
+    volumes:
+      # Mount source code for hot reload
+      - ./apps/ui:/app/apps/ui:delegated
+      - ./libs:/app/libs:delegated
+      # Preserve node_modules inside container
+      - ui_dev_node_modules:/app/node_modules
+      - ui_app_node_modules:/app/apps/ui/node_modules
+      # X11 socket for display forwarding (Linux hosts)
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    networks:
+      - worldmaker-network
+    security_opt:
+      - seccomp:unconfined
+    shm_size: '2gb'
+    stdin_open: true
+    tty: true
+
+# -----------------------------------------------------------------------------
+# Networks
+# -----------------------------------------------------------------------------
+networks:
+  worldmaker-network:
+    driver: bridge
+    name: worldmaker-network
+
+# -----------------------------------------------------------------------------
+# Named volumes for preserving node_modules
+# -----------------------------------------------------------------------------
+volumes:
+  node_modules:
+  server_node_modules:
+  ui_node_modules:
+  ui_dev_node_modules:
+  ui_app_node_modules:

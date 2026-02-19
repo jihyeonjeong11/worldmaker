@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "notifications": [
+    {
+      "id": "658e9818-5200-4669-9cbc-584b726f0084",
+      "type": "feature_waiting_approval",
+      "title": "Feature Ready for Review",
+      "message": "\"feature-1770367353071-s8fitfw0p\" is ready for your review and approval.",
+      "createdAt": "2026-02-06T08:49:11.528Z",
+      "read": false,
+      "dismissed": false,
+      "featureId": "feature-1770367353071-s8fitfw0p",
+      "projectPath": "c:\\automaker\\backup\\worldmaker"
+    },
+    {
+      "id": "45396430-6ea3-42e1-bc2d-849a367b5f6c",
+      "type": "feature_waiting_approval",
+      "title": "Feature Ready for Review",
+      "message": "\"feature-1770367353071-s8fitfw0p\" is ready for your review and approval.",
+      "createdAt": "2026-02-06T08:55:19.335Z",
+      "read": false,
+      "dismissed": false,
+      "featureId": "feature-1770367353071-s8fitfw0p",
+      "projectPath": "c:\\automaker\\backup\\worldmaker"
+    }
+  ]
+}

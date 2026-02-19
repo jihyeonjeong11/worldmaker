@@ -1,0 +1,72 @@
+# =============================================================================
+# Worldmaker Docker Ignore File
+# =============================================================================
+# Excludes files from Docker build context to speed up builds
+# =============================================================================
+
+# Dependencies - installed in container
+node_modules
+**/node_modules
+
+# Build outputs - rebuilt in container
+dist
+**/dist
+build
+**/build
+.vite
+
+# Git
+.git
+.gitignore
+.github
+
+# IDE and Editor
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test coverage
+coverage
+.nyc_output
+
+# Environment files (contain secrets)
+.env
+.env.local
+.env.*.local
+
+# Docker files (avoid recursive context)
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# Documentation
+*.md
+!README.md
+
+# Temporary files
+tmp
+temp
+.tmp
+.temp
+
+# Automaker
+.automaker
+
+# Electron build outputs
+out
+release
+
+# Package manager locks (keep package-lock.json)
+yarn.lock
+pnpm-lock.yaml
